@@ -1,5 +1,5 @@
 body {  
-    color:black;  
+    color:white;  
     font-size:1.2em;
     font-family: "Verdana", sans-serif;
     margin-left: 5em;
@@ -7,13 +7,76 @@ body {
     margin-bottom: 5em;
     margin-top: 5em;
     font-weight: bolder;
+    background-color:rgba(54, 0, 75, 0.445)
 }
 
-div.ArtSection {
-    background-color: lightgreen;
+p {
+    font-weight: lighter;
+}
+
+div.HomepageHead {
+    text-align: center;
+    margin-top: 2em;
+    background-color: rgba(77, 0, 107, 0.459);
     border-radius: .5em;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+img#CityDrawing {
+    float: center;
+    width: 100%;
+    margin-top: 2em;
+    border-radius: .5em;
+}
+
+div.ArtSection, div.CodingSection {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgba(77, 0, 107, 0.459);
+    border-radius: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color:white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.navbar {
+    flex-direction: row; 
+    width: 20%;
+    margin: 1em;
+    display: block; 
+    border: 1px solid; 
+    border-radius: .5em; 
+    padding: .5em 2em; 
+    text-align: center;
+    font-size: smaller;
+    border-color: white;
+}
+
+a:link {  
+    color:mediumslateblue; 
+    font-weight:bolder; 
+}
+
+a:visited {  
+    color:white;
+    font-weight:bolder;  
+}
+
+div.navbar:hover {
+    background-color:rgba(77, 0, 107, 0.459);;
+}
+
+a:active {
+    color:purple;
 }
