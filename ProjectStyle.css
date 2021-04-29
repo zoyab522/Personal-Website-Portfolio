@@ -8,3 +8,12 @@ body {
     margin-top: 5em;
     font-weight: bolder;
 }
+
+div.ArtSection {
+    background-color: lightgreen;
+    border-radius: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
