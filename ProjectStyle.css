@@ -80,3 +80,79 @@ div.navbar:hover {
 a:active {
     color:purple;
 }
+
+footer {
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: .5em;
+    color: white;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+}
+
+div.flexible {
+    flex-direction: row;
+    padding: .5em;
+    text-align: center;
+}
+
+div.imagesOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(77, 0, 107, 0.459);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: .5em;
+}
+
+img#ArianaGrande, img#SelenaGomez, img#TaylorSwift {
+    height: 300px;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius: .5em;
+}
+
+div.Studies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(77, 0, 107, 0.459);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: .5em;
+}
+
+img#EyeStudyOne, img#EyeStudyTwo, img#HairStudyTwo, img#HairStudyThree {
+    width: 400px;
+    margin: 1em;
+    border-radius: .5em;
+}
+
+div.Paintings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(77, 0, 107, 0.459);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: .5em;
+}
+
+img#LampsAlley, img#AlleyPainting, img#TreesLamps {
+    width: 50%;
+    margin: 1em;
+    border-radius: .5em;
+}
