@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" href="ProjectStyle.css">
+        <title>Contact Form</title>
+        <style type="text/css">
+            ol, ul { 
+           list-style-type: none;
+            }
+         </style>
+    </head>
+    <body>
+
+        <header>
+
+            <div class="navbar">
+
+                <div class = "HomeButton">
+                    <a href="Homepage.html"><button class = "Homebtn">Home</button></a>
+                    </div>
+    
+                <div class = "Aboutdropdown">
+                    <button class = "aboutdropbtn">About Me<i class = "fa fa-caret-down"></i></button>
+                    <div class = "about-content">
+                        <a href = "AboutPage.html">Bio</a>
+                        <a href = "ContactForm.html">Contact</a>
+                     </div>
+                    </div>
+                    
+                    <div class="dropdownOne">
+                      <button class="dropbtnOne">Art Projects<i class="fa fa-caret-down"></i></button>
+                      <div class="dropdownOne-content">
+                        <a href="ArtProjects.html">Traditional</a>
+                        <a href="DigitalWork.html">Digital</a>
+                      </div>
+                    </div>
+    
+                    <div class = "dropdownTwo">
+                        <button class = "dropbtnTwo">Code Projects<i class = "fa-caret-down"></i></button>
+                        <div class = "dropdownTwo-content">
+                            <a href = "CodingProjects.html">Java</a>
+                            <a href = "Python.html">Python</a>
+                    </div>
+                  </div>
+    
+                </div>
+    
+        </header>
+
+        <h1>Zoya Bawangaonwala | Contact Form</h1>
+
+        <p>Questions or Comments? Just wanna say hi? Fill out the form!</p>
+
+        <h1>Contact</h1>
+        <div class = "ContactForm">
+        <form onsubmit="return formfunction()" action="#">
+            <p><label>Name &nbsp;<input type="text" name="name"></label></p>
+            <p><label>Email &nbsp;<input type="text" name="email"></label></p>
+            <p><label>Comments&nbsp;<textarea name="comments" rows="5" cold="50"></textarea></label></p>
+            <p><input type="submit"></p>
+            <p><input type="reset"></p>
+        </form>
+        </div>
+
+        <footer>
+            <div class = "flexible">
+            <p>Created by Zoya Bawangaonwala | April 2021 
+            </p>
+            </div>
+         </footer>
+
+        </body>
+        </html>
