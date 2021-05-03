@@ -48,20 +48,28 @@
     
         </header>
 
-        <h1>Zoya Bawangaonwala | Contact Form</h1>
+        <h1>Contact Form</h1>
 
-        <p>Questions or Comments? Just wanna say hi? Fill out the form!</p>
+        <p>Questions/Comments? Feel free to reach out by filling out the form below!</p>
 
-        <h1>Contact</h1>
-        <div class = "ContactForm">
-        <form onsubmit="return formfunction()" action="#">
-            <p><label>Name &nbsp;<input type="text" name="name"></label></p>
-            <p><label>Email &nbsp;<input type="text" name="email"></label></p>
-            <p><label>Comments&nbsp;<textarea name="comments" rows="5" cold="50"></textarea></label></p>
-            <p><input type="submit"></p>
-            <p><input type="reset"></p>
+
+        <form action="https://zoyab522.github.io/FinalProject1/contact.php" method="post">
+
+        <fieldset>
+        <legend>Your Information</legend>
+         <ul>
+         <li><label for="FormName">Name:</label> <input type="text" name="Name" id="FormName"></li>
+        <li><label for="FormEmail">Email: <input type="email" name="email" id="FormEmail"></label></li>
+
+        <li>Comments or Questions:<br>
+        <textarea name="Comments" rows="4" cols="60" maxlength="800" id="FormStory" placeholder="No more than 800 characters long"></textarea></li>
+        </ul>
+        </fieldset>
+
+        <p><input type="submit" value="Submit">
+        <input type="reset"></p>
+
         </form>
-        </div>
 
         <footer>
             <div class = "flexible">
