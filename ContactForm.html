@@ -4,11 +4,7 @@
         <meta charset="utf-8" >
         <link rel="stylesheet" href="ProjectStyle.css">
         <title>Contact Form</title>
-        <style type="text/css">
-            ol, ul { 
-           list-style-type: none;
-            }
-         </style>
+        <script src = "contact.js" defer></script>
     </head>
     <body>
 
@@ -53,27 +49,18 @@
         <p>Questions/Comments? Feel free to reach out by filling out the form below!</p>
 
 
-        <form action="https://zoyab522.github.io/FinalProject1/contact.php" method="post">
-
-        <fieldset>
-        <legend>Your Information</legend>
-         <ul>
-         <li><label for="FormName">Name:</label> <input type="text" name="Name" id="FormName"></li>
-        <li><label for="FormEmail">Email: <input type="email" name="email" id="FormEmail"></label></li>
-
-        <li>Comments or Questions:<br>
-        <textarea name="Comments" rows="4" cols="60" maxlength="800" id="FormStory" placeholder="No more than 800 characters long"></textarea></li>
-        </ul>
-        </fieldset>
-
-        <p><input type="submit" value="Submit">
-        <input type="reset"></p>
+        <form onsubmit="return formfunction();" action = "return null">
+            <div><label>Name: &nbsp;<input name = "namefield" id = "name" type = "text"></label></div>
+            <div><label>Email: &nbsp;<input name = "emailfield" id = "email" type = "email"></label></div>
+            <div><label>Comments: &nbsp;<input name = "commentfield" id = "comments" type = "text"></label></div>
+            <div><input type = "submit"></div>
+            <div><input type = "reset"></div>
 
         </form>
 
         <footer>
             <div class = "flexible">
-            <p>Created by Zoya Bawangaonwala | April 2021 
+            <p>Created by Zoya Bawangaonwala | May 2021 
             </p>
             </div>
          </footer>
