@@ -1,3 +1,5 @@
+/* General body text */
+
 body {  
     color:white;  
     font-size:1.2em;
@@ -14,6 +16,8 @@ p {
     font-weight: lighter;
 }
 
+/* Header of the homepage, Java and Python pages */
+
 div.HomepageHead, div.JavaHead, div.PythonHead {
     text-align: center;
     margin-top: 2em;
@@ -25,6 +29,7 @@ div.HomepageHead, div.JavaHead, div.PythonHead {
     padding-bottom: 1em;
 }
 
+/* block behind each body of text and images per 'section' */
 div.CreativeSpace, div.AboutMe, div.COVID, div.Weathering {
     margin-top: 2em;
     background-color: rgba(77, 0, 107, 0.459);
@@ -45,6 +50,8 @@ div.Robotics {
     padding-bottom: 1em;
     font-weight: lighter;
 }
+
+/* Homepage */
 
 img#CityDrawing {
     float: center;
@@ -337,7 +344,7 @@ div.ContactForm {
     font-weight: lighter;
 }
 
-/* Java Page */
+/* Java and Python Images */
 div.CreativeSpaceImages, div.ENBReel, div.COVIDGraph, div.MountainReel {
     display: flex;
     flex-wrap: wrap;
@@ -375,6 +382,9 @@ img#Display, img#Ani {
     border-radius: .5em;
     margin: 1em;
 }
+
+/* Homepage Header Animation */
+
 
 
 

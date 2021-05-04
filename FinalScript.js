@@ -1,6 +1,5 @@
-GalleryButton = document.getElementById("GalleryButton");
-
-GalleryButton.addEventListener("click", onButtonClick); 
-
+AOS.init({
+    duration: 1200,
+  })
 
 
