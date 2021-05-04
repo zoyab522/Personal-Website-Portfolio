@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ProjectStyle.css">
+        <title> Java </title>
+    </head>
+    <body>
+        <header>
+
+            <div class="navbar">
+
+                <div class = "HomeButton">
+                    <a href="Homepage.html"><button class = "Homebtn">Home</button></a>
+                    </div>
+    
+                <div class = "Aboutdropdown">
+                    <button class = "aboutdropbtn">About Me<i class = "fa fa-caret-down"></i></button>
+                    <div class = "about-content">
+                        <a href = "AboutPage.html">Bio</a>
+                        <a href = "ContactForm.html">Contact</a>
+                     </div>
+                    </div>
+                    
+                    <div class="dropdownOne">
+                      <button class="dropbtnOne">Art Projects<i class="fa fa-caret-down"></i></button>
+                      <div class="dropdownOne-content">
+                        <a href="ArtProjects.html">Traditional</a>
+                        <a href="DigitalWork.html">Digital</a>
+                      </div>
+                    </div>
+    
+                    <div class = "dropdownTwo">
+                        <button class = "dropbtnTwo">Code Projects<i class = "fa-caret-down"></i></button>
+                        <div class = "dropdownTwo-content">
+                            <a href = "CodingProjects.html">Java</a>
+                            <a href = "Python.html">Python</a>
+                    </div>
+                  </div>
+    
+                </div>
+    
+        </header>
+
+        <div class = "JavaHead">
+            <h1>Java Projects</h1>
+            <p>
+            Some of my biggest programming projects are in Java. Here, you will find a project called <strong>Creative Space</strong>, a drawing program similar to
+            applications like Paint and Photoshop—only simpler. This project was created alongside Taylor Yang, another junior at ECG.
+            The other projects you will find on this page are related to my robotics team, <em><strong>FIRST</strong></em> <strong>Tech Challenge</strong>
+            team #731 Wannabee Strange. These programs are all from within the last year.        
+            </p>
+            </div>
+
+        <div class = "CreativeSpace">
+            <h2>Creative Space</h2>
+            <p>
+            With this project, the goal was to create something that resembles programs like Paint or Photoshop (though a bit simpler in terms of functionality).
+            We wanted to have a program that could draw shapes and lines of varying colors, shapes, and sizes, with an eraser, layers, the ability to undo/redo, 
+            and also clear the pane.
+            </p>
+            
+            <p>
+            When the user first runs the program, they will see a large window that should be the size of their screen, depending on the device. The window is 
+            titled “Creative Space”. On the left side of the screen, there is a sidebar with a series of interactive elements such as buttons and sliders, 
+            organized by categories using labels and button colors. The first two buttons fall under the ‘Brushes’ category: one brush is an eraser and the other 
+            is just a drawing brush, like a digital pen or pencil. If the user selects the drawing brush, they can drag their mouse across the screen to draw 
+            or write what they want. The eraser works the same way: the user can drag across the screen to erase what they want. In addition to the eraser 
+            function, I also added a ‘Clear All’ button, which allows the user to clear the screen of all visible elements and start on a fresh, blank slate. 
+            I added this function to make it easier to get rid of things without having to manually do so with the eraser.
+            </p>
+            <p>
+            The next set of buttons is called ‘Shapes’, in which the user can draw circles, rectangles, ellipses, and lines. If the setting for the outline and 
+            fill are not altered, no matter what shape is drawn, it will be transparent by default with a thin, black outline. If the user changes the line weight 
+            using the slider, none of the current shapes drawn on the pane will be altered, but any new shapes will be drawn with the changed line weight. 
+            This concept also applies to shapes drawn after the fill color/stroke color are changed. Once the user clicks, drags, and releases, a new shape or 
+            line will be added to the current layer, depending on what button was selected. 
+            Shapes are drawn from the starting point of where the mouse was clicked to the point where the mouse was released. 
+            This was done using event.getX() and event.getY() methods.
+            </p>
+            <p>
+            The final sets of buttons are for undoing and redoing actions, adding and removing layers, and adding images. 
+            All layers are added to a stack, and they stack up upon one another. Layers are not visible to the user, they are simply invisible drawing panes. 
+            We established a redoHistory and an undoHistory for the redo/undo buttons. These essentially keep track of the actions by the user so they can undo 
+            and redo. The ‘Add Image’ button allows the user to access their file directory on their device and add an image to their drawing. 
+            Parts of the image can be erased, drawn on top of, and cleared altogether.
+            </p>
+
+            <h2>Interface: </h2>
+            <div class id = "CreativeSpaceImages"> 
+            <img id = "CSOne" src = "code_images/Screen Shot 2021-05-03 at 8.27.53 AM.png">
+            <img id = "CSTwo" src = "code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png">
+            <img id = "CSThree" src = "code_images/Screen Shot 2021-05-03 at 8.30.32 AM.png">
+            </div>
+
+        </div>
+
+        <div class = "Robotics">
+            <h2>Robotics Programming Highlights</h2>
+            <p>This is a highlight reel of my team's robot code, created by the programming lead of the team and a few other members.</p>
+
+            <h3>Autonomous</h3>
+
+                    <strong>Ease of Code Modification and Editing: </strong>
+                    <ul>
+                        <li>Classes for Teleop, Auto, and Functions</li>
+                        <li>This results in a versatile and editable autonomous that can be quickly changed</li>
+                    </ul>
+
+                    <strong>Function Classes</strong>  
+                    <ul>
+                        <li>Classes for functions to be called from Auto to make Auto easier to read</li>
+                        <li>Different classes of functions for different versions of Auto based on complexity, ease of coding, and precision</li>
+                        <li>Function Class with functions for basic necessities and learning (encoderDrive, setTargetPosition)</li>
+                        <li>Function Class with movement functions for linear movement, turning, and strafing</li>
+                        <li>Gyro based movements for accuracy</li>
+                        <li>Corrections to keep the robot on the given Auto path regardless of slight changes in movement</li>
+                    </ul>
+
+                    <strong>Vision</strong>
+                    <ul>
+                    <li>Pipeline class using easyOpenCV to detect number of rings in starter stack</li>
+                    </ul>
+
+            <h3>TeleOp</h3>
+
+                    <strong>Ease of Code Modification and Editing: </strong>
+                    <ul>
+                        <li>Encoder based hardstops for the Wobble goal arm that stop the motor from running past its hardware limits</li>
+                        <li>Switch from Command Based Framework to linearOpMode</li>
+                    </ul>
+
+                    <strong>Driver Ergonomics</strong>
+                    <ul>
+                        <li>Slow mode driving on the drivetrain to ensure precise controls</li>
+                        <li>Specific controls fit for the comfort of the drivers</li>
+                    </ul>
+
+            <h2>Highlights, Images, Descriptions</h2>
+
+                    <strong>Gyro Functions - Concise Code (First Image)</strong>
+
+                    <p>
+                    While using the gyro, we set up our functions to be self correcting so that the robot would essentially be able to move back to its 
+                    target path even if it has small errors. Encoders are used in a PID algorithm that tracks position and error to calculate motor power 
+                    for drivetrain movements. To keep these functions from becoming too lengthy and unreadable, we set up other functions that could 
+                    be universal to all our gyro drivetrain movement functions. This kept our code from becoming lengthy because of unnecessary duplicated 
+                    code within similar functions.
+                    <br>
+                    Using the goForwardStraight function, all the embedded methods can be sought out and understood.
+                    </p>
+
+                    <strong>Vision (Second Image)</strong>
+                    <p>
+                    In the beginning of the season we decided on easyOpenCv as our choice of vision for the Ultimate Goal season. easyOpenCv is more efficient 
+                    in terms of simplicity of code in comparison to other vision systems. We are using an external webcam for vision this year with the Control 
+                    Hub. We had to make a Pipeline for detecting the number of rings in the starter stack during initialization to find which target zone to drop 
+                    wobble goals in during  auto.
+                    <br>
+                    The main loop for figuring out how many rings are in the starter stack on the field looks like the code in the second image below. 
+                    If the value of avg1 is greater than the constant for the four threshold, there are four rings present. The else statements for one and zero 
+                    rings are similar. 
+                    The rest of the pipeline defines everything needed for the webcam to do this.
+                    </p>
+
+                    <div class id = ENBReel>
+                    <img id = "Gyro" src = "code_images/Screen Shot 2021-05-03 at 7.11.28 PM.png">
+                    <img id = "Vision" src = "code_images/Screen Shot 2021-05-03 at 7.16.30 PM.png">
+                    </div>
+
+        </div>
+
+        <footer>
+            <div class = "flexible">
+            <p>Created by Zoya Bawangaonwala | May 2021 
+            </p>
+            </div>
+         </footer>
+
+    </body>
+</html>

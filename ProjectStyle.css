@@ -14,7 +14,7 @@ p {
     font-weight: lighter;
 }
 
-div.HomepageHead {
+div.HomepageHead, div.JavaHead, div.PythonHead {
     text-align: center;
     margin-top: 2em;
     background-color: rgba(77, 0, 107, 0.459);
@@ -23,6 +23,27 @@ div.HomepageHead {
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+div.CreativeSpace, div.AboutMe, div.COVID, div.Weathering {
+    margin-top: 2em;
+    background-color: rgba(77, 0, 107, 0.459);
+    border-radius: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+div.Robotics {
+    margin-top: 2em;
+    background-color: rgba(77, 0, 107, 0.459);
+    border-radius: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: lighter;
 }
 
 img#CityDrawing {
@@ -301,7 +322,10 @@ button {
 
 img#ProfilePicture {
     float: left;
-    margin: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     border-radius: .5em;
     width: 350px;
 }
@@ -312,5 +336,46 @@ div.ContactForm {
     margin: auto;
     font-weight: lighter;
 }
+
+/* Java Page */
+div.CreativeSpaceImages, div.ENBReel, div.COVIDGraph, div.MountainReel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(77, 0, 107, 0.459);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: .5em;
+
+}
+
+img#CSOne, img#CSTwo, img#CSThree {
+    height: 224px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+img#Gyro {
+    height: 400px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+img#Vision, img#Results {
+    height: 300px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+img#Display, img#Ani {
+    height: 600px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+
 
 
