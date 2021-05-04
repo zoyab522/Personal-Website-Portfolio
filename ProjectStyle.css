@@ -4,8 +4,6 @@ body {
     color:white;  
     font-size:1.2em;
     font-family: "Verdana", sans-serif;
-    margin-left: 5em;
-    margin-right: 5em;
     margin-bottom: 5em;
     margin-top: 5em;
     font-weight: bolder;
@@ -37,23 +35,21 @@ div.HomepageHead {
     background-position: center;
     padding-top: 5em;
     padding-bottom: 5em;
-    border-radius: .5em;
-}
-
-img#CityDrawing {
-    border-radius: .5em;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 div.HeadText {
-    background-color:rgba(45, 39, 48, 0.87);
+    background-color:rgba(43, 38, 46, 0.87);
     background-attachment:fixed;
     background-size: cover;
-    margin: auto;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 7em;
+    padding-bottom: 7em;
     padding-left: 1.5em;
     padding-right: 1.5em;
     text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* block behind each body of text and images per 'section' */
@@ -92,16 +88,48 @@ div.ArtSection, div.CodingSection {
     color:white;
 }
 
-img#SampleOne, img#SampleTwo, img#DigitalSampleOne, img#DigitalSampleTwo {
-    height: 200px;
+/* Slide show one images */
+img#DigitalSampleOne { /*F*/
+    height: 300px;
+    margin-left: 30px;
     border-radius: .5em;
-    margin: 1em;
+}
+
+img#DigitalSampleTwo { /*SU*/
+    height: 300px;
+    margin-left: 75px;
+    border-radius: .5em;
+}
+
+img#SampleOne { /*AG*/
+    height: 300px;
+    margin-left: 30px;
+    border-radius: .5em;
+}
+
+img#SampleTwo { /*HS*/
+    height: 300px;
+    margin-left: 118px;
+    border-radius: .5em;
+}
+
+img#DigitalSampleThree {
+    height: 300px;
+    margin-left: 130px;
+    border-radius: .5em;
+}
+
+img#DigitalSampleFour {
+    height: 300px;
+    margin-left: 30px;
+    border-radius: .5em;
 }
 
 img#CreativeSpaceSample, img#MountainAniSample {
     height: 375px;
     border-radius: .5em;
     margin: 1em;
+    border-radius: .5em;
 }
 
 /* Navbar */
@@ -403,8 +431,75 @@ img#Display, img#Ani {
     margin: 1em;
 }
 
-/* Homepage Header Animation */
+/* SLIDESHOW ONE ----------------------------------------------------------------------- */
 
+.slideshowContainerOne {
+  max-width: 1100px;
+  max-height: 400px;
+  position: relative;
+  margin: auto;
+  background-color: rgba(88, 8, 119, 0.37);
+  padding: 3em;
+  border-radius: .5em;
+}
+
+.SlideFade {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: .5em;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right: 50px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(77, 0, 107, 0.459);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
 
 
 
