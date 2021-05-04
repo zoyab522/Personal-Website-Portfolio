@@ -18,7 +18,7 @@ p {
 
 /* Header of the homepage, Java and Python pages */
 
-div.HomepageHead, div.JavaHead, div.PythonHead {
+div.JavaHead, div.PythonHead {
     text-align: center;
     margin-top: 2em;
     background-color: rgba(77, 0, 107, 0.459);
@@ -27,6 +27,33 @@ div.HomepageHead, div.JavaHead, div.PythonHead {
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+div.HomepageHead {
+    background-image: url(final_images/CityDrawing.jpeg); 
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-radius: .5em;
+}
+
+img#CityDrawing {
+    border-radius: .5em;
+}
+
+div.HeadText {
+    background-color:rgba(45, 39, 48, 0.87);
+    background-attachment:fixed;
+    background-size: cover;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
 }
 
 /* block behind each body of text and images per 'section' */
@@ -52,13 +79,6 @@ div.Robotics {
 }
 
 /* Homepage */
-
-img#CityDrawing {
-    float: center;
-    width: 100%;
-    margin-top: 2em;
-    border-radius: .5em;
-}
 
 div.ArtSection, div.CodingSection {
     margin-top: 2em;
