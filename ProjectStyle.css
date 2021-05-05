@@ -43,8 +43,9 @@ div.HeadText {
     background-size: cover;
     padding-top: 7em;
     padding-bottom: 7em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    line-height: 160%;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
@@ -75,18 +76,25 @@ div.Robotics {
 /* Homepage */
 
 div.ArtSection {
-    background-color: rgba(57, 0, 80, 0.322);
+    background-color: rgba(69, 0, 97, 0.363);
     padding-left: 1em;
     padding-right: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     color:white;
 }
 
+div.ArtHeadText, div.CodeHeadText {
+    text-align: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    line-height: 160%;
+}
+
 div.CodingSection {
-    background-color: rgba(57, 0, 80, 0.466);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    background-color: rgba(44, 0, 61, 0.486);
+    padding-top: 2em;
+    padding-bottom: 2em;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -146,11 +154,30 @@ img#DigitalSampleSix {
     border-radius: .5em;
 }
 
-img#CreativeSpaceSample, img#MountainAniSample {
-    height: 375px;
+/* Slideshow 2 images */
+
+img#CreativeSpaceSample {
+    height: 300px;
     border-radius: .5em;
-    margin: 1em;
+    margin-left: 50px;
+}
+
+img#CSampleTwo, img#ScatterProgress {
+    height: 300px;
     border-radius: .5em;
+    margin-left: 20px;
+}
+
+img#ScatterProgress {
+    height: 350px;
+    border-radius: .5em;
+    margin-left: 20px;
+}
+
+img#MountainAniSample {
+    height: 350px;
+    border-radius: .5em;
+    margin-left: 110px;
 }
 
 /* Navbar */
@@ -386,15 +413,23 @@ img#Logo {
     margin: 1em;
 }
 
-/* Homepage Gallery Button */
+/* Homepage Gallery Buttons */
 
 button {
-    font-size: 1em;
+    font-size: 16px;
+    font-family: inherit;
     color: rgba(77, 0, 107, 0.459);
     text-align: center;
     font-weight: lighter;
-    font-family: sans-serif;
     border-radius: .5em;
+    color: white;
+    padding: 14px 16px;
+    background-color: rgb(87, 32, 109);
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(17, 0, 26, 0.822);  
 }
 
 /* About Page Picture */
@@ -417,7 +452,7 @@ div.ContactForm {
 }
 
 /* Java and Python Images */
-div.CreativeSpaceImages, div.ENBReel, div.COVIDGraph, div.MountainReel {
+div.CreativeSpaceImages, div.COVIDGraph, div.MountainReel {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -437,13 +472,7 @@ img#CSOne, img#CSTwo, img#CSThree {
     margin: 1em;
 }
 
-img#Gyro {
-    height: 400px;
-    border-radius: .5em;
-    margin: 1em;
-}
-
-img#Vision, img#Results {
+img#Results {
     height: 300px;
     border-radius: .5em;
     margin: 1em;
@@ -475,7 +504,7 @@ img#Display, img#Ani {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next, .prevTwo, .nextTwo {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -491,30 +520,14 @@ img#Display, img#Ani {
 }
 
 /* Position the "next button" to the right */
-.next {
+.next, .nextTwo {
   right: 0;
   margin-right: 150px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, .prevTwo:hover, .nextTwo:hover {
   background-color: rgba(77, 0, 107, 0.459);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: white;
 }
 
 /* Fading animation */
@@ -527,7 +540,3 @@ img#Display, img#Ani {
   from {opacity: .3}
   to {opacity: 1}
 }
-
-
-
-

@@ -47,8 +47,8 @@
     
         <div class = HeadText>
 
-        <h1>Z O Y A &nbsp B A W A N G A O N W A L A</h1>
-        <p>Hello! My name is Zoya, and I am a junior at the Early College at Guilford, and I am passionate about art and digital graphic design.
+        <h1>Z O Y A &nbsp; B A W A N G A O N W A L A</h1>
+        <p>Hello! My name is Zoya, I am a junior at the Early College at Guilford, and I am passionate about art and digital graphic design.
             Over the years I have also been developing an interest in computer science, and I am working towards 
             deepening my understanding of coding and integrating it with my skills in graphics.
             As I continue to learn and grow, I created this site to track my progress and expand my reach
@@ -59,14 +59,22 @@
         </div>
 
         <div class = "ArtSection">
-        <h1>Art Portfolio</h1>
-        <a href="ArtProjects.html"><button>View Gallery</button></a>
-
+            <div class = "ArtHeadText">
+        <h1>A R T &nbsp; P O R T F O L I O</h1>
+        <br>
+        <a href="ArtProjects.html"><button>View Traditional Art</button></a>
+        &nbsp;
+        &nbsp;
+        <a href="DigitalWork.html"><button>View Digital Art</button></a>
+        <br>
+        <br>
         <p >From a very young age, I've always had a love for art. I'm mostly self-taught, but I have taken some fine arts classes to develop my skill 
             in mediums like charcoal, pastels, watercolors, and even oils. My main focus is in portraiture and photorealism with pencil drawings,
             but my styles range from drawings to paintings as well. I also do a lot of digital work using Adobe Photoshop and Procreate to create graphics
             on larger scales.
         </p>
+        <br>
+        </div>
 
         <!-- Slideshow container -->
 
@@ -74,73 +82,89 @@
 
             <!-- images with number and caption text -->
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "SampleTwo" src = "final_images/HairStudyThree.png">
                 <img id = "SampleOne" src = "final_images/ArianaGrandeDrawing.JPG">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "DigitalSampleTwo" src = "final_images/UmbrellaTwo.jpg">
                 <img id = "DigitalSampleOne" src = "final_images/UmbrellaOne.JPEG">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "SampleThree" src = "final_images/SelenaGomezDrawing.jpg">
                 <img id = "SampleFour" src = "final_images/LotusDrawing.jpg">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "DigitalSampleThree" src = "final_images/AlbumCover.JPG">
                 <img id = "DigitalSampleFour" src = "final_images/Aquarium.png">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "SampleFive" src = "final_images/LampsAlley.png">
                 <img id = "SampleSix" src = "final_images/AlleyPainting.png">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "DigitalSampleFive" src = "final_images/CityDrawingOne.jpeg">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "SampleSeven" src = "final_images/ButterflyPencils.jpg">
             </div>
 
-            <div class = "SlideFade fade">
+            <div class = "SlideFade1 fade">
                 <img id = "DigitalSampleSix" src = "final_images/BridgeWater.JPG">
                 <img id = "DigitalSampleSeven" src = "final_images/TreesTwo.JPG">
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
             <br>
-
-            <!--dots -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-                <span class="dot" onclick="currentSlide(8)"></span>
-                </div>
 
         </div>
 
         <div class = "CodingSection">
-        <h1>Coding Projects</h1>
+            <div class = "CodeHeadText">
+        <h1>C O D I N G &nbsp; P R O J E C T S</h1>
+        <br>
+        <a href="CodingProjects.html"><button>View Coding Projects</button></a>
+        <br>
+        <br>
         <p>Since 9th grade, I've been learning how to program robots using Java. Doing this has allowed me to branch out and mentor others in programming, and 
             participate in lots of tech workshops where I helped teach middle-school girls about the importance of STEM and robotics as a whole. I also have some
             background in Python from those tech workshops as well as some projects I created from a Scientific Computing course. Finally, I am currently developing
             my skills in HTML, CSS, and Javascript. 
         </p>
-        <img id = "CreativeSpaceSample" src = "code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png">
-        <img id = "MountainAniSample" src = "code_images/MountainRotation.png">
+        <br>
+        </div>
+
+        <!-- Slideshow container -->
+
+        <div class = "slideshowContainerOne">
+
+            <!-- images with number and caption text -->
+
+            <div class = "SlideFade2 fade">
+                <img id = "CreativeSpaceSample" src = "code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png">
+                <img id = "CSampleTwo" src = "code_images/Screen Shot 2021-05-03 at 8.30.32 AM.png">
+            </div>
+
+            <div class = "SlideFade2 fade">
+                <img id = "MountainAniSample" src = "code_images/MountainRotation.png">
+                <img id = "ScatterProgress" src = "code_images/MountainScatter.png">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <br>
+
         </div>
 
         <footer>
