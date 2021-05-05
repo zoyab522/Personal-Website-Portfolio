@@ -5,7 +5,6 @@ body {
     font-size:1.2em;
     font-family: "Verdana", sans-serif;
     margin-bottom: 5em;
-    margin-top: 5em;
     font-weight: bolder;
     background-color:rgba(54, 0, 75, 0.445)
 }
@@ -33,10 +32,9 @@ div.HomepageHead {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
     margin-left: 0px;
     margin-right: 0px;
+    opacity: 0.8;
 }
 
 div.HeadText {
@@ -76,16 +74,21 @@ div.Robotics {
 
 /* Homepage */
 
-div.ArtSection, div.CodingSection {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: rgba(77, 0, 107, 0.459);
-    border-radius: .5em;
+div.ArtSection {
+    background-color: rgba(57, 0, 80, 0.322);
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     color:white;
+}
+
+div.CodingSection {
+    background-color: rgba(57, 0, 80, 0.466);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /* Slide show one images */
@@ -154,7 +157,6 @@ img#CreativeSpaceSample, img#MountainAniSample {
 header {
     display: flex;
     display: block;
-    margin-bottom: 130px;
     margin-left: auto;
     margin-right: auto;
     flex: 1 1 auto;
@@ -162,10 +164,10 @@ header {
 
 .navbar {
     overflow: hidden;
-    border-radius: .5em;
-    width: 573px;
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1 1 auto;
+    background-color: rgba(38, 0, 53, 0.808);
+    padding-bottom: 6.3em;
+    padding-top: 2em;
 }
 
 /* Links in navbar */
@@ -187,15 +189,14 @@ header {
 /* Dropdown buttons */
   .dropbtnOne, .dropbtnTwo, .aboutdropbtn, .HomeButton .Homebtn {
     font-size: 16px;
-    border: none;
     color: white;
     padding: 14px 16px;
-
-    background-color: rgba(77, 0, 107, 0.459);
+    background-color: rgb(87, 32, 109);
+    margin-left: 430px;
+    border-color: transparent;
     
     /* for responsive web design purposes */
     font-family: inherit; 
-    margin: 0; /* Important for vertical align on mobile phones */
 }
 
 .dropbtnOne, .dropbtnTwo, .aboutdropbtn {
@@ -205,6 +206,11 @@ header {
 .dropdownOne-content, .dropdownTwo-content, .about-content {
     display: none;
     position: absolute;
+}
+
+/* For hovering over the buttons in the bar */
+.dropbtnOne:hover, .dropbtnTwo:hover, .aboutdropbtn:hover, .HomeButton:hover, .Homebtn:hover {
+    background-color: rgba(17, 0, 26, 0.822);
 }
 
 /* Links in dropdown */
@@ -457,7 +463,10 @@ img#Display, img#Ani {
   position: relative;
   margin: auto;
   background-color: rgba(88, 8, 119, 0.37);
-  padding: 3em;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   border-radius: .5em;
 }
 
@@ -484,7 +493,7 @@ img#Display, img#Ani {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  margin-right: 50px;
+  margin-right: 150px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
