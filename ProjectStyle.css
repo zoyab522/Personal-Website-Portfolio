@@ -318,96 +318,195 @@ div.flexible {
 
 /* Art Projects Page */
 
-h1.ArtHeader {
-    margin: auto;
+h1.TraditionalHeader, h1.DigitalHeadText {
+    text-align: center;
 }
 
 /* Traditional Art Images */
 
-img#ArianaGrande, img#SelenaGomez, img#TaylorSwift, img#DoubleExposure {
+.ArianaGrandeContainer, img#ArianaGrande, .SelenaContainer, img#SelenaGomez, .TaylorContainer, img#TaylorSwift, .DEContainer, img#DoubleExposure,
+.EyeStudyContainer, img#EyeStudyOne, .EyeStudyTwoContainer, img#EyeStudyTwo, .BrownHSContainer, img#HairStudyTwo, .PinkHSContainer, img#HairStudyThree, 
+.SmallHSContainer, img#HairStudyOne, .StrawberriesContainer, img#Strawberries, .LotusContainer, img#Lotus, .CupcakeContainer, img#Cupcake, 
+.ButterflyContainer, img#Butterfly, .FrozenContainer, img#Frozen, .PaintingOneContainer, img#PaintingOne, .PaintingTwoContainer, img#PaintingTwo, 
+.PaintingThreeContainer, img#PaintingThree, .P1Container, img#P1, .P2Container, img#P2, .overlay {
+    position: relative;
     height: 300px;
-    margin: 1em;
     border-radius: .5em;
+    margin: 1em;
 }
 
-div.imagesOne, div.Studies, div.Paintings, div.OtherPencilWork, div.Ink {
+div.Gallery {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: center;
-    background-color:rgba(77, 0, 107, 0.459);
     padding-top: 1em;
     padding-bottom: 1em;
     padding-right: 1em;
     padding-left: 1em;
-    border-radius: .5em;
 }
 
-img#EyeStudyOne, img#EyeStudyTwo, img#HairStudyTwo, img#HairStudyThree, img#HairStudyOne {
+/* GRAY OVERLAY CSS */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 300px;
-    margin: 1em;
+    width: auto;
     border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
 }
-
-img#PaintingOne, img#PaintingTwo, img#PaintingThree{
-    height: 300px;
-    border-radius: .5em;
-    margin: 1em;
-}
-
-img#Lotus, img#Strawberries, img#Butterfly, img#Frozen, img#Cupcake {
-    height: 280px;
-    border-radius: .5em;
-    margin: 1em;
-}
-
-img#P1, img#P2 {
-    height: 300px;
-    border-radius: .5em;
-    margin: 1em;
-}
+  .ArianaGrandeContainer:hover .overlay, .SelenaContainer:hover .overlay, .TaylorContainer:hover .overlay, .DEContainer:hover .overlay, 
+  .EyeStudyContainer:hover .overlay, .EyeStudyTwoContainer:hover .overlay, .BrownHSContainer:hover .overlay, .PinkHSContainer:hover .overlay, 
+  .SmallHSContainer:hover .overlay, .StrawberriesContainer:hover .overlay, .LotusContainer:hover .overlay, .CupcakeContainer:hover .overlay,
+  .ButterflyContainer:hover .overlay, .FrozenContainer:hover .overlay, .PaintingOneContainer:hover .overlay, .PaintingTwoContainer:hover .overlay, 
+  .PaintingThreeContainer:hover .overlay, .P1Container:hover .overlay, .P2Container:hover .overlay {
+    opacity: .9;
+  }
+  
+  /* caption overlay */
+  .text {
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 /* Digital Art Page */
 
-div.Watercolors, div.Procreate, div.Photoshop {
+div.DigitalGallery {
     display: flex;
+    flex: 1 1 auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color:rgba(77, 0, 107, 0.459);
     padding-top: 1em;
     padding-bottom: 1em;
     padding-right: 1em;
     padding-left: 1em;
-    border-radius: .5em;
 }
 
-img#Lake, img#Sunflower, img#ForestOne, img#ForestOne, img#ForestTwo, img#FallUmbrella, img#SpringUmbrella {
+.overlayOne {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 250px;
+    width: auto;
     border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
     margin: 1em;
 }
 
-img#CityDrawingOne, img#Memories, img#Aquarium {
-    height: 400px;
+.BridgeContainer, img#Lake, .SunflowerContainer, img#Sunflower, .F1Container, img#ForestOne, .F2Container, img#ForestTwo, .U1Container, img#FallUmbrella,
+.U2Container, img#SpringUmbrella {
+    position: relative;
+    height: 250px;
     width: auto;
     border-radius: .5em;
     margin: 1em;
+} 
+
+.BridgeContainer:hover .overlayOne, .SunflowerContainer:hover .overlayOne, .F1Container:hover .overlayOne, .F2Container:hover .overlayOne, 
+.U1Container:hover .overlayOne, .U2Container:hover .overlayOne, .CityDrawingContainer:hover .overlayTwo, .MemoriesContainer:hover .overlayTwo,
+.AquariumContainer:hover .overlayTwo, .WUContainer:hover .overlayThree, .ENBContainer:hover .overlayFour, .FIContainer:hover .overlayFour, 
+.QuarkContainer:hover .overlayFour, .LogoContainer:hover .overlayFive {
+    opacity: .9;
 }
 
-img#ENB, img#Quark, img#FIRSTInitiative {
-    height: 420px;
+.CityDrawingContainer, img#CityDrawingOne, .MemoriesContainer, img#Memories, .AquariumContainer, img#Aquarium, .overlayTwo {
+    position: relative;
+    height: 400px;
     border-radius: .5em;
     margin: 1em;
 }
 
-img#WeeklyUpdate {
+.WUContainer, img#WeeklyUpdate, .overlayThree {
+    position: relative;
     width: 1100px;
     border-radius: .5em;
     margin: 1em;
 }
 
-img#Logo {
+.overlayTwo {
+    position: absolute;
+    height: 400px;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+}
+.overlayThree {
+    position: absolute;
+    width: 1100px;
+    height:197px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+}
+
+.overlayFour {
+    position: absolute;
+    width: auto;
+    height:420px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+    margin: 1em;
+}
+
+.ENBContainer, img#ENB, .QuarkContainer, img#Quark, .FIContainer, img#FIRSTInitiative {
+    position: relative;
+    height: 420px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+.overlayFive {
+    position: absolute;
+    width: auto;
+    height:300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+    margin: 1em;
+}
+
+.LogoContainer, img#Logo {
+    position: relative;
     height: 300px;
     border-radius: .5em;
     margin: 1em;
