@@ -89,7 +89,7 @@ div.ArtSection, div.CodingSection {
 }
 
 /* Slide show one images */
-img#DigitalSampleOne { /*F*/
+img#DigitalSampleOne, img#SampleOne, img#SampleFour, img#DigitalSampleFour, img#SampleSix, img#DigitalSampleSeven { /*F*/
     height: 300px;
     margin-left: 30px;
     border-radius: .5em;
@@ -101,27 +101,45 @@ img#DigitalSampleTwo { /*SU*/
     border-radius: .5em;
 }
 
-img#SampleOne { /*AG*/
-    height: 300px;
-    margin-left: 30px;
-    border-radius: .5em;
-}
-
 img#SampleTwo { /*HS*/
     height: 300px;
     margin-left: 118px;
     border-radius: .5em;
 }
 
-img#DigitalSampleThree {
+img#SampleThree {
     height: 300px;
     margin-left: 130px;
     border-radius: .5em;
 }
 
-img#DigitalSampleFour {
+img#DigitalSampleThree {
     height: 300px;
-    margin-left: 30px;
+    margin-left: 200px;
+    border-radius: .5em;
+}
+
+img#SampleFive {
+    height: 300px;
+    margin-left: 125px;
+    border-radius: .5em;
+}
+
+img#DigitalSampleFive {
+    height: 300px;
+    margin-left: 185px;
+    border-radius: .5em;
+}
+
+img#SampleSeven {
+    height:300px;
+    margin-left:270px;
+    border-radius: .5em;
+}
+
+img#DigitalSampleSix {
+    height: 300px;
+    margin-left: 200px;
     border-radius: .5em;
 }
 
