@@ -13,17 +13,22 @@ p {
     font-weight: lighter;
 }
 
-/* Header of the homepage, Java and Python pages */
+/* PAGE MAJOR DIVS AND HEADERS */
 
-div.JavaHead, div.PythonHead {
+div.JavaHead {
     text-align: center;
-    margin-top: 2em;
     background-color: rgba(77, 0, 107, 0.459);
-    border-radius: .5em;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
-    padding-bottom: 1em;
+}
+
+div.PythonHead {
+    text-align:center;
+    background-color:rgba(56, 0, 78, 0.555);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
 }
 
 div.HomepageHead {
@@ -34,11 +39,33 @@ div.HomepageHead {
     background-position: center;
     margin-left: 0px;
     margin-right: 0px;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+div.CodingBackgroundHead {
+    background-image: url(final_images/CodeHeader.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 0.9;
+}
+
+div.FirstCodeHeader {
+    background-color:rgba(0, 0, 0, 0.87);
+    background-attachment: fixed;
+    background-size:cover;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 div.HeadText {
-    background-color:rgba(43, 38, 46, 0.87);
+    background-color:rgba(43, 38, 46, 0.925);
     background-attachment:fixed;
     background-size: cover;
     padding-top: 7em;
@@ -52,10 +79,9 @@ div.HeadText {
 }
 
 /* block behind each body of text and images per 'section' */
-div.CreativeSpace, div.AboutMe, div.COVID, div.Weathering {
+div.CreativeSpace, div.COVID, div.Weathering {
     margin-top: 2em;
-    background-color: rgba(77, 0, 107, 0.459);
-    border-radius: .5em;
+    background-color: rgba(77, 0, 107, 0.329);
     padding-left: 4em;
     padding-right: 4em;
     padding-top: 1em;
@@ -84,8 +110,7 @@ div.ArtSection {
     color:white;
 }
 
-/* All h1 headers */
-div.ArtHeadText, div.CodeHeadText, div.JavaHead, div.PythonHead {
+div.ArtHeadText, div.CodeHeadText {
     text-align: center;
     padding-left: 4em;
     padding-right: 4em;
@@ -372,7 +397,7 @@ div.Gallery {
   }
   
   /* caption overlay */
-  .caption, .CScaption {
+  .caption {
     color: white;
     font-size: 16px;
     font-weight: lighter;
@@ -532,16 +557,48 @@ button:hover {
     background-color: rgba(17, 0, 26, 0.822);  
 }
 
-/* About Page Picture */
+/* About Page */
+
+.AboutHeadText {
+    text-align: center;
+}
+
+div.AboutMe {
+    background-color: rgba(77, 0, 107, 0.329);
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Container for info */
+.row {
+    float: left;
+    width: 27%;
+}
+
+.container {
+    padding:0px;
+}
+  
+.Contact {
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 8px;
+    color: white;
+    background-color:rgb(87, 32, 109);
+    text-align: center;
+    cursor: pointer;
+    width: 87%;
+}
 
 img#ProfilePicture {
     float: left;
-    margin-left: 1em;
-    margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: .5em;
-    width: 350px;
+    width: 300px;
 }
 
 /*Contact Form */
@@ -595,6 +652,18 @@ div.CreativeSpaceGallery {
     margin: 1em;
 }
 
+.CScaption {
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 23px;
+  }
+
 .DrawContainer, img#CSOne, .ShapesContainer, img#CSTwo, .ImageContainer, img#CSThree {
     position: relative;
     height: 280px;
@@ -606,17 +675,6 @@ div.CreativeSpaceGallery {
 .DrawContainer:hover .CSoverlay, .ShapesContainer:hover .CSoverlay, .ImageContainer:hover .CSoverlay {
     opacity: .9;
 }
-
-.CScaption {
-    color: white;
-    font-size: 10px;
-    font-weight: bolder;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
 img#Results {
     height: 300px;
@@ -665,18 +723,15 @@ img#Display, img#Ani {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next, .nextTwo {
   right: 0;
   margin-right: 150px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover, .prevTwo:hover, .nextTwo:hover {
   background-color: rgba(77, 0, 107, 0.459);
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1s;

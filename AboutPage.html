@@ -8,7 +8,7 @@
     <body>
         <header>
 
-            <div class="navbar">
+            <div class="navbar" id = "AboutAnchor">
 
             <div class = "HomeButton">
                 <a href="Homepage.html"><button class = "Homebtn">Home</button></a>
@@ -41,16 +41,24 @@
             </div>
 
         </header>
+
         <div class = "AboutMe">
-        <h1>About Me</h1>
-        <p>Three years ago, I said, “I will never learn how to program". I was an aspiring artist, and little did I know that my paintbrush would guide me 
-            to a world of digitization. It started in middle school when I participated in a technology summer camp. I learned how to use blocks of code to 
+        <br>
+        <h1 class = "AboutHeadText">A B O U T &nbsp; M E </h1>
+        <br>
+        <p>It started in middle school when I participated in a technology summer camp. I learned how to use blocks of code to 
             program lego robots and create new apps and video games online. This camp sparked my interest in computing, and I returned the next year as a 
             near-peer mentor with the hope of helping girls connect their passions to STEM. I remember one girl who loved to write, so I showed her how to 
             create interactive stories online. 
         </p>
 
-        <img id = "ProfilePicture" src = "final_images/image11.jpeg">
+        <div class="row">
+            <img id = "ProfilePicture" src = "final_images/image11.jpeg" alt = "Profile Picture">
+            <div class="container">
+            <p><a href="ContactForm.html"><button class = "Contact">Contact</button></a></p>
+
+            </div>
+        </div>
         
         <p>This led me to join my school’s robotics club as the marketing lead, where I created digital graphics for the club and launched a new website and 
             club logo. Being the marketing lead of my robotics club helped me connect my passion for graphic design to robotics, and my background in coding 
@@ -64,12 +72,16 @@
             As I continue to advance my programming and art skills, meshing code with 
             design could be the key to helping me unlock my potential. 
         </p>
+        <br>
+        <br>
         </div>
 
         <footer>
             <div class = "flexible">
             <p>Created by Zoya Bawangaonwala | May 2021 
             </p>
+            <a href="AboutPage.html#AboutAnchor"><button>Back to Top</button></a>
+            <a href="Homepage.html"><button>Back to Home</button></a>
             </div>
          </footer>
 
