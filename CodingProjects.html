@@ -32,27 +32,28 @@
                 <div class = "dropdownTwo">
                     <button class = "dropbtnTwo">Code Projects<i class = "fa-caret-down"></i></button>
                     <div class = "dropdownTwo-content">
-                        <a href = "https://zoyab522.github.io/FinalProject1/CodingProjects.html#Java">Java</a>
-                        <a href = "https://zoyab522.github.io/FinalProject1/CodingProjects.html#Python">Python</a>
+                        <a href = "CodingProjects.html#Java">Java</a>
+                        <a href = "CodingProjects.html#Python">Python</a>
                 </div>
               </div>
 
             </div>
 
         </header>
-
-        <div class = "JavaHead">
-            <h1 class = "JavaHeadText" id = "Java">Java Projects</h1>
+        <div class = "JavaHead" id = "Java">
+            <br>
+            <br>
+            <h1 class = "JavaHeadText">J A V A &nbsp; P R O J E C T S</h1>
+            <br>
             <p>
             Some of my biggest programming projects are in Java. Here, you will find a project called <strong>Creative Space</strong>, a drawing program similar to
-            applications like Paint and Photoshop—only simpler. This project was created alongside Taylor Yang, another junior at ECG.
-            The other projects you will find on this page are related to my robotics team, <em><strong>FIRST</strong></em> <strong>Tech Challenge</strong>
-            team #731 Wannabee Strange. These programs are all from within the last year.        
+            applications like Paint and Photoshop—only simpler. This project was created alongside Taylor Yang, another junior at ECG.    
             </p>
-            </div>
 
         <div class = "CreativeSpace">
-            <h2>Creative Space</h2>
+            <br>
+            <h2>C R E A T I V E &nbsp; S P A C E</h2>
+            <br>
             <p>
             With this project, the goal was to create something that resembles programs like Paint or Photoshop (though a bit simpler in terms of functionality).
             We wanted to have a program that could draw shapes and lines of varying colors, shapes, and sizes, with an eraser, layers, the ability to undo/redo, 
@@ -85,27 +86,67 @@
             Parts of the image can be erased, drawn on top of, and cleared altogether.
             </p>
 
-            <h2>Interface: </h2>
-            <div class id = "CreativeSpaceImages"> 
-            <img id = "CSOne" src = "code_images/Screen Shot 2021-05-03 at 8.27.53 AM.png">
-            <img id = "CSTwo" src = "code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png">
-            <img id = "CSThree" src = "code_images/Screen Shot 2021-05-03 at 8.30.32 AM.png">
+            <br>
+            <h2>I N T E R F A C E : </h2>
+            <br>
+            <div class = "CreativeSpaceGallery">
+
+                <div class="DrawContainer">
+                    <img id = "CSOne" src="code_images/Screen Shot 2021-05-03 at 8.27.53 AM.png" alt="Creative Space Interface: Drawing">
+                    <div class="CSoverlay">
+                    <div class="CScaption">Drawing on the Creative Space Interface. The white is the eraser. Everything is on one layer, including
+                    the image in the background. A clear all function can be used to clear the canvas (in the sidebar). The leaves on the canvas were
+                    drawn with changed stroke weight and colors.
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="ShapesContainer">
+                    <img id = "CSTwo" src="code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png" alt="Creative Space Interface: Drawing Shapes and the Eraser">
+                    <div class="CSoverlay">
+                    <div class="CScaption">Drawing shapes, and using the eraser. Everything is on one layer. The white is the eraser. Shapes, lines, and 
+                    anything else drawn can have a changed opacity, fill color, stroke weight/color, etc. Opacity change not shown. A background
+                    image is still there.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="ImageContainer">
+                    <img id = "CSThree" src="code_images/Screen Shot 2021-05-03 at 8.30.32 AM.png" alt="Creative Space Interface: Adding Images">
+                    <div class="CSoverlay">
+                    <div class="CScaption">Opening up the file directory to add images to the canvas. The background image was added previously. By clicking 
+                    the 'Add Image' button in the sidebar, images can be added.
+                    </div>
+                    </div>
+                </div>
+                
             </div>
 
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
         </div>
 
-        <div class = "PythonHead">
-            <h1 class = "PythonHeadText" id = "Python">Python/Scientific Computing Projects</h1>
+        <div class = "PythonHead" id = "Python">
+            <br>
+            <br>
+            <h1 class = "PythonHeadText">P Y T H O N / S C I E N T I F I C &nbsp; C O M P U T I N G</h1>
+            <br>
+            <br>
             <p>
             Over the course of the last year, I've been developing my understanding of Python. The two projects you'll find below are largely about
             data analysis and the use of graphs. The first project is an analysis of COVID mortality rates in Maryland from last summer, using real data from the 
             time the project was created. The second project is a simulation of what weathering would look like on a mountain over time using animation. This 
             project also uses real data and incorporates it into the simulation and the design of the terrain itself. 
             </p>
-            </div>
 
             <div class = "COVID">
-                <h2>COVID-19 Mortality Rates in Maryland: Analysis</h2>
+                <br>
+                <h2>M A R Y L A N D &nbsp; C O V I D &nbsp; M O R T A L I T Y &nbsp; R A T E S</h2>
+                <h2>2 0 2 0 &nbsp; A N A L Y S I S</h2>
+                <br>
                 <p>
                 I used real data from a .csv file containing COVID-19 mortality rates for states across the country, focusing on Maryland for this project. 
                 I used the death rates to create a series of graphs to eventually calculate the approximate mortality rate of the state.
@@ -130,15 +171,19 @@
                 </p>
                 
                 </p>
-    
-                <h2>Graph: </h2>
+                <br>
+                <h2>G R A P H: </h2>
+                <br>
                 <div class id = "COVIDGraph"> 
                 <img id = "Results" src = "code_images/GraphResults.png">
                 </div>
+                <br>
             </div>
 
         <div class = "Weathering">
-            <h2>Weathering Project</h2>
+            <br>
+            <h2>W E A T H E R I N G &nbsp; P R O J E C T</h2>
+            <br>
             <p>
                 This project was created alongside another junior ECG student, Natalie Earnhardt.
             </p>
@@ -164,7 +209,7 @@
                 The graph moved based on a variable called ‘i’, which changed the altitudes of the plot over time using the formula.
                 The final outcome of the project displays a 3D scatterplot of terrain which displayed the rate of erosion depending on the factors a user alters.
             
-            <h3>Part One: Displaying the Terrain (See the first image) </h3>
+            <h3>P A R T &nbsp; O N E - T E R R A I N &nbsp; D I S P L A Y &nbsp;( S E E &nbsp; I M A G E &nbsp; O N E ) </h3>
             <p>
                 The purpose of this is to show a clear visualization of the mountain as the weathering animation is a scatterplot version of the terrain. 
                 First, the required packages and files were imported for the display. Then, I transformed the data into a long format so that the plot could 
@@ -172,7 +217,7 @@
                 used. An azimuth is an angular measurement in a spherical coordinate system. 
             </p>
 
-            <h3>Final Animation, How it Came Together</h3>
+            <h3> P A R T &nbsp; T W O - F I N A L &nbsp; A N I M A T I O N</h3>
             <p>
                 To actually animate the graph and display the animation based on the factors, a formula was created using the variables defined in the code snippet. This formula is called the 
                 'weathering factor’ (ef), and was put together after carefully analyzing all research and real data implemented in the project. 
@@ -192,8 +237,12 @@
             <div class id = MountainReel>
                 <img id = "Display" src = "code_images/MountainRotation.png">
                 <img id = "Ani" src = "code_images/MountainScatter.png">
+                <br>
             </div>
-            
+            <br>
+        </div>
+        <br>
+        <br>
         </div>
 
         <footer>
