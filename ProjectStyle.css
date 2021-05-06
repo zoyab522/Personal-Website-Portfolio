@@ -814,7 +814,6 @@ div.footerButtons {
     font-size: 16px;
     font-family: inherit;
     color: rgba(77, 0, 107, 0.459);
-    background-color: rgba(76, 33, 94, 0.315);
     text-align: center;
     font-weight: lighter;
     border-radius: .5em;
@@ -827,10 +826,11 @@ div.footerButtons {
 button.FB {
     margin: .5em;
     cursor: pointer;
+    text-decoration: none;
 }
 
-div.footerButtons:hover {
-    color: rgba(17, 0, 26, 0.822); 
+button.FB:hover {
+    background-color: rgba(17, 0, 26, 0.822); 
 }
 
 div.flexible {
@@ -842,54 +842,36 @@ div.flexible {
 
 .SocialBar {
     display: inline-flex;
-    margin-top: 2em;
+    margin: 2em;
   }
   
-  .SocialsIcons .icon {
-    background-color: rgb(255, 255, 255);
+.SocialsIcons .icon, .SocialIconTwo .icon {
     border-radius: 50%;
-    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 45px;
     height: 45px;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     cursor: pointer;
-  }
+ }
 
-  .SocialIconTwo .icon {
-    background-color: rgba(77, 0, 107, 0.459);
-    border-radius: 50%;
-    margin: 10px;
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    cursor: pointer;
-  }
-  
-  img#github, img#instagram {
+img#github {
       border-radius: 50%;
-      margin: 10px;
-      width: 92px;
+      width: 60px;
       height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       cursor: pointer;
+}
 
-  }
-
-  img#instagram {
+img#instagram {
     border-radius: 50%;
-    margin: 10px;
-    width: 104px;
+    width: 70px;
     height: auto;
     display: flex;
     justify-content: center;
