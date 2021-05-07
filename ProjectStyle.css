@@ -881,15 +881,41 @@ img#instagram {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
 
     h1 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     h2, h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
+
+    div.container {
+        margin: auto;
+        width: fit-content;
+        margin: auto;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+        width: fit-content; 
+        border:none; 
+        border-radius: .5em; 
+        margin-top: 1em; 
+        margin-bottom: 1em; 
+        align-items: center;
+        justify-content: center;
+      }
+      
+      input[type=submit] {
+        background-color:rgba(77, 0, 107, 0.459);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
 
 
 
