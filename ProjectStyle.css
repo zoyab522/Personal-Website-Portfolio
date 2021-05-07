@@ -882,7 +882,6 @@ img#instagram {
     align-items: center;
     flex-direction: row;
     cursor: pointer;
-
 }
 
 @media screen and (max-width: 820px) {
@@ -902,21 +901,12 @@ img#instagram {
 
 /* Links in navbar */
 .navbar a, .navbarONE a {
-    font-size: .7em;
+    font-size: .5em;
     font-weight: lighter;
     color: white;
     margin: auto;
     cursor: pointer;
 }
-
-/* dropdown containers */
-.dropdownOne, .dropdownTwo, .Aboutdropdown {
-    float: center;
-}
-
-.Aboutdropdown, .dropdownOne, .dropdownTwo {
-    margin-left: 0px;
-} 
   
 /* Dropdown buttons */
 .dropbtnOne, .dropbtnTwo, .aboutdropbtn {
@@ -945,7 +935,6 @@ img#instagram {
     font-family: inherit; 
 }
 
-
 .dropdownOne-content, .dropdownTwo-content, .about-content {
     display: none;
     position: absolute;
@@ -959,17 +948,7 @@ img#instagram {
 /* Links in dropdown */
 .dropdownOne-content a, .dropdownTwo-content a, .about-content a {
     color: white;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
-    border-radius: .5em;
-    text-align: center;
-    background-color: rgb(87, 32, 109);
-}
-
-/* background color links on hover */
-.dropdownOne-content a:hover, .dropdownTwo-content a:hover, .about-content a:hover {
-    background-color: rgba(214, 112, 255, 0.219)
 }
   
 /* menu on hover */
@@ -977,33 +956,26 @@ img#instagram {
     display: block;
     border-radius: .5em;
     color: white;
-    padding: 12px 16px;
-    border-radius: .5em;
-    text-align: center;
-    background-color: rgb(87, 32, 109);
-    width: 95px;
+    width: 60px;
 }
 
 .Aboutdropdown:hover .about-content {
     display: block;
     border-radius: .5em;
     color: white;
-    padding: 12px 16px;
-    border-radius: .5em;
-    background-color: rgb(87, 32, 109);
-    width: 76px;
+    width: 45px;
 }
 
 .dropdownTwo:hover .dropdownTwo-content {
     display: block;
     border-radius: .5em;
-    float: none;
     color: white;
-    padding: 12px 16px;
-    border-radius: .5em;
-    text-align: center;
-    background-color: rgb(87, 32, 109);
-    width: 110px;
+    width: 70px;
+}
+
+/* background color links on hover */
+.dropdownOne-content a:hover, .dropdownTwo-content a:hover, .about-content a:hover {
+    background-color: rgba(214, 112, 255, 0.219)
 }
 
 }
