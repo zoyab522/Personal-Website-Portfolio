@@ -884,11 +884,15 @@ img#instagram {
 @media screen and (max-width: 1050px) {
 
     h1 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     h2, h3 {
         font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
     }
 
     div.container {
