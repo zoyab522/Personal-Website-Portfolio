@@ -9,38 +9,37 @@
 
         <div class = "CodingBackgroundHead">
 
-        <header>
-            <div class="navbar" id = "CodeAnchor">
+            <header>
 
-            <div class = "HomeButton">
-                <a href="Homepage.html"><button class = "Homebtn">Home</button></a>
-                </div>
-
-            <div class = "Aboutdropdown">
-                <button class = "aboutdropbtn">About Me<i class = "fa-caret-down"></i></button>
-                <div class = "about-content">
-                    <a href = "AboutPage.html">Bio</a>
-                    <a href = "ContactForm.html">Contact</a>
-                 </div>
-                </div>
-                
-                <div class="dropdownOne">
-                  <button class="dropbtnOne">Art Projects<i class="fa-caret-down"></i></button>
-                  <div class="dropdownOne-content">
-                    <a href="ArtProjects.html">Traditional</a>
-                    <a href="DigitalWork.html">Digital</a>
+                <div class="navbar">
+    
+                <div class = "HomeButton">
+                    <a href="Homepage.html"><button class = "Homebtn">Home</button></a>
+                    </div>
+    
+                <div class = "Aboutdropdown">
+                        <a href = "AboutPage.html"><button class = "Bio">Bio</button></a>
+                     </div>
+                    
+                    <div class="dropdownOne">
+                      <button class="dropbtnOne">Art Projects<i class="fa-caret-down"></i></button>
+                      <div class="dropdownOne-content">
+                        <a href="ArtProjects.html">Traditional</a>
+                        <a href="DigitalWork.html">Digital</a>
+                      </div>
+                    </div>
+    
+                    <div class = "dropdownTwo">
+                        <button class = "dropbtnTwo">Code Projects<i class = "fa-caret-down"></i></button>
+                        <div class = "dropdownTwo-content">
+                            <a href = "CodingProjects.html#Java">Java</a>
+                            <a href = "CodingProjects.html#Python">Python</a>
+                    </div>
                   </div>
+    
                 </div>
-
-                <div class = "dropdownTwo">
-                    <button class = "dropbtnTwo">Code Projects<i class = "fa-caret-down"></i></button>
-                    <div class = "dropdownTwo-content">
-                        <a href = "CodingProjects.html#Java">Java</a>
-                        <a href = "CodingProjects.html#Python">Python</a>
-                </div>
-              </div>         
-            </div>
-        </header>
+    
+            </header>
 
         <div class = "FirstCodeHeader"><h1>C O D I N G &nbsp; P R O J E C T S</h1>
         <br>
@@ -160,6 +159,7 @@
                 I used real data from a .csv file containing COVID-19 mortality rates for states across the country, focusing on Maryland for this project. 
                 I used the death rates to create a series of graphs to eventually calculate the approximate mortality rate of the state.
                 </p>
+                <p>
                 In most of my graphs, I had to find dy and dx, smooth them, divide, graph it, and then examine the end of the graph. The number the line in the 
                 final graph appears to approach was the approximate the mortality rate. My final result was a Jupyter notebook with a graph of
                 smoothdy / smoothdx and an added text field explaining what limit I estimated.
@@ -169,9 +169,10 @@
                 the deaths over time as well. Then, I graphed the derivates for both of the above graphs, and smoothed them out to make them easier to understand.
                 This laid the foundation for my next step.
                 </p>
+                <p>
                 Finally, I plotted smooth dx over smooth dy, combining the previous two graphs into one to estimate the mortality rate. I zoomed in on the very 
                 end of the first graph to approximate the mortality rate as best I can. My results are shown in the images below.
-                <p>
+                </p>
                 <p>
                 <strong>Results Summary: </strong>
                 Over time, the mortality rate decreases (with some extremely small spikes that become noticeable near the end). 

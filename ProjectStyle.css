@@ -327,13 +327,13 @@ header {
 }
 
 /* dropdown containers */
-.dropdownOne, .dropdownTwo, .Aboutdropdown {
+.dropdownOne, .dropdownTwo {
     float: left;
     overflow: hidden;
 }
   
 /* Dropdown buttons */
-  .dropbtnOne, .dropbtnTwo, .aboutdropbtn, .HomeButton .Homebtn {
+  .dropbtnOne, .dropbtnTwo, .HomeButton .Homebtn {
     font-size: 16px;
     color: white;
     padding: 14px 16px;
@@ -346,11 +346,11 @@ header {
     font-family: inherit; 
 }
 
-.dropbtnOne, .dropbtnTwo, .aboutdropbtn {
+.dropbtnOne, .dropbtnTwo {
     margin: 14px;
 }
 
-.dropdownOne-content, .dropdownTwo-content, .about-content {
+.dropdownOne-content, .dropdownTwo-content {
     display: none;
     position: absolute;
 }
@@ -361,7 +361,7 @@ header {
 }
 
 /* Links in dropdown */
-.dropdownOne-content a, .dropdownTwo-content a, .about-content a {
+.dropdownOne-content a, .dropdownTwo-content a{
     float: none;
     color: white;
     padding: 12px 16px;
@@ -373,7 +373,7 @@ header {
 }
 
 /* background color links on hover */
-.dropdownOne-content a:hover, .dropdownTwo-content a:hover, .about-content a:hover {
+.dropdownOne-content a:hover, .dropdownTwo-content a:hover {
     background-color: rgba(214, 112, 255, 0.219)
 }
   
@@ -390,18 +390,6 @@ header {
     width: 95px;
     margin-left: 14px;
     margin-right: 34px;
-}
-
-.Aboutdropdown:hover .about-content {
-    display: block;
-    border-radius: .5em;
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    border-radius: .5em;
-    background-color: rgb(87, 32, 109);
-    width: 76px;
-    margin-left: 14px;
 }
 
 .dropdownTwo:hover .dropdownTwo-content {
@@ -648,33 +636,11 @@ div.AboutMe {
     padding-bottom: 1em;
 }
 
-/* Container for info */
-.row {
-    float: left;
-    width: 27%;
-}
-
-.container {
-    padding:0px;
-}
-  
-.ContactButton {
-    border: none;
-    outline: 0;
-    display: block;
-    padding: 8px;
-    color: white;
-    background-color:rgb(87, 32, 109);
-    text-align: center;
-    cursor: pointer;
-    width: 87%;
-    text-decoration: none;
-}
-
 img#ProfilePicture {
     float: left;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 3em;
     border-radius: .5em;
     width: 300px;
 }
@@ -884,14 +850,14 @@ img#instagram {
 @media screen and (max-width: 1050px) {
 
     h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     h2, h3 {
         font-size: 14px;
     }
 
-    p {
+    p, p.strong {
         font-size: 12px;
     }
 
@@ -1044,6 +1010,24 @@ img#instagram {
         height: 107px;
         border-radius: .5em;
         margin-left: auto;
+    }
+
+    button {
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    img#Results, img#Display, img#Ani {
+        width: 200px;
+        height: auto;
+    }
+
+    img#CSOne, img#CSTwo, img#CSThree {
+        height: 200px;
+    }
+
+    .CSoverlay {
+        display: none;
     }
 
 
