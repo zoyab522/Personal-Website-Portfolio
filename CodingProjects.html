@@ -3,43 +3,29 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="ProjectStyle.css">
+        <script src="FinalScript.js" defer></script>
         <title> Java </title>
     </head>
     <body>
 
-        <div class = "CodingBackgroundHead">
+        <div class = "CodingBackgroundHead" id = "CodeAnchor">
 
-            <header>
-
-                <div class="navbar">
-    
-                <div class = "HomeButton">
-                    <a href="Homepage.html"><button class = "Homebtn">Home</button></a>
-                    </div>
-    
-                <div class = "Aboutdropdown">
-                        <a href = "AboutPage.html"><button class = "Bio">Bio</button></a>
-                     </div>
-                    
-                    <div class="dropdownOne">
-                      <button class="dropbtnOne">Art Projects<i class="fa-caret-down"></i></button>
-                      <div class="dropdownOne-content">
-                        <a href="ArtProjects.html">Traditional</a>
-                        <a href="DigitalWork.html">Digital</a>
-                      </div>
-                    </div>
-    
-                    <div class = "dropdownTwo">
-                        <button class = "dropbtnTwo">Code Projects<i class = "fa-caret-down"></i></button>
-                        <div class = "dropdownTwo-content">
-                            <a href = "CodingProjects.html#Java">Java</a>
-                            <a href = "CodingProjects.html#Python">Python</a>
-                    </div>
+            <div class="topnav" id="myTopnav">
+                <a href="Homepage.html" class="active">Home</a>
+                <a href="AboutPage.html">About</a>
+                <a href="CodingProjects.html">Coding</a>
+                <div class="dropdown">
+                  <button class="dropbtn"><strong>Portfolio</strong>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="ArtProjects.html">Traditional Work</a>
+                    <a href="DigitalWork.html">Digital Graphics</a>
                   </div>
-    
                 </div>
-    
-            </header>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+
 
         <div class = "FirstCodeHeader"><h1>C O D I N G &nbsp; P R O J E C T S</h1>
         <br>
@@ -48,7 +34,7 @@
         </div>
 
 
-        <div class = "JavaHead" id = "Java">
+        <div class = "JavaHead" id = "JavaAnchor">
             <br>
             <br>
             <h1 class = "JavaHeadText">J A V A</h1>
@@ -137,20 +123,23 @@
         <br>
         </div>
 
-        <div class = "PythonHead" id = "Python">
+
+        <div class = "PythonHead" id = "PythonAnchor">
             <br>
             <br>
             <h1 class = "PythonHeadText">P Y T H O N</h1>
             <br>
-            <br>
             <p>
             Over the course of the last year, I've been developing my understanding of Python. The two projects you'll find below are largely about
             data analysis and the use of graphs. The first project is an analysis of COVID mortality rates in Maryland from last summer, using real data from the 
-            time the project was created. The second project is a simulation of what weathering would look like on a mountain over time using animation. This 
-            project also uses real data and incorporates it into the simulation and the design of the terrain itself. 
+            time the project was created. The second project is a Python Scripting Project I did using a 3D Modeling software called Blender, where I 
+            photorealistically modeled a donut in a cafe setting. 
+            The third project is a simulation of what weathering would look like on a mountain over time using animation. This 
+            project also uses real data and incorporates it into the simulation and the design of the terrain itself, and incorporates some aspects of machine
+            learning.
             </p>
 
-            <div class= "Blender">
+            <div class= "BlenderHead" id="BlenderAnchor">
                 <br>
                 <h2>B L E N D E R &nbsp; P R O J E C T S - P Y T H O N &nbsp; S C R I P T I N G</h2>
                 <h2>A N D &nbsp; 3 D &nbsp; M O D E L I N G</h2>
@@ -166,7 +155,7 @@
                 </p>
             </div>
 
-            <div class = "COVID">
+            <div class = "COVID" id="COVIDMortality">
                 <br>
                 <h2>M A R Y L A N D <br>C O V I D &nbsp; M O R T A L I T Y </h2>
                 <h2>2 0 2 0 &nbsp; A N A L Y S I S</h2>
@@ -206,7 +195,7 @@
                 <br>
             </div>
 
-        <div class = "Weathering">
+        <div class = "Weathering" id="Weathering">
             <br>
             <h2>W E A T H E R I N G<br>P R O J E C T</h2>
             <br>

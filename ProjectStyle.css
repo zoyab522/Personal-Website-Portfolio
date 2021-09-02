@@ -12,6 +12,136 @@ p {
     font-weight: lighter;
 }
 
+/*NAVBAR*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:rgba(12, 12, 12, 0.87);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    background-color:rgba(87, 32, 109, 0.425);
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    background-color:rgba(87, 32, 109, 0.26);
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav {
+        flex-direction: column;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  
 /* PAGE MAJOR DIVS AND HEADERS */
 
 div.JavaHead {
@@ -108,10 +238,11 @@ div.HeadText {
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
+    color: white;
 }
 
 /* block behind each body of text and images per 'section' */
-div.CreativeSpace, div.COVID, div.Weathering, div.Blender {
+div.CreativeSpace, div.COVID, div.Weathering, div.BlenderHead {
     margin-top: 2em;
     background-color: rgba(77, 0, 107, 0.329);
     padding-left: 4em;
@@ -280,129 +411,16 @@ img#CSampleTwo, img#ScatterProgress {
     margin-left: 20px;
 }
 
-img#ScatterProgress {
-    height: 350px;
+img#BlenderRender {
+    height: 300px;
     border-radius: .5em;
     margin-left: 20px;
 }
 
 img#MountainAniSample {
-    height: 350px;
+    height: 300px;
     border-radius: .5em;
-    margin-left: 110px;
-}
-
-/* Navbar */
-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    flex: 1 1 auto;
-}
-
-.navbar {
-    overflow: hidden;
-    flex: 1 1 auto;
-    background-color:rgba(12, 12, 12, 0.87);
-    padding-top: 2em;
-}
-
-.navbarONE {
-    overflow: hidden;
-    flex: 1 1 auto;
-    padding-top: 2em;
-    padding-bottom: 6.5em;
-    background-color: rgba(77, 0, 107, 0.459);
-}
-
-/* Links in navbar */
-.navbar a, .navbarONE a {
-    float: left;
-    font-size: .7em;
-    font-weight: lighter;
-    color: white;
-    padding: 14px 16px;
-    margin: auto;
-    cursor: pointer;
-}
-
-/* dropdown containers */
-.dropdownOne, .dropdownTwo {
-    float: left;
-    overflow: hidden;
-}
-  
-/* Dropdown buttons */
-  .dropbtnOne, .dropbtnTwo, .HomeButton .Homebtn {
-    font-size: 16px;
-    color: white;
-    padding: 14px 16px;
-    background-color: rgb(87, 32, 109);
-    margin-left: 430px;
-    border-color: transparent;
-    cursor: pointer;
-    
-    /* for responsive web design purposes */
-    font-family: inherit; 
-}
-
-.dropbtnOne, .dropbtnTwo {
-    margin: 14px;
-}
-
-.dropdownOne-content, .dropdownTwo-content {
-    display: none;
-    position: absolute;
-}
-
-/* For hovering over the buttons in the bar */
-.dropbtnOne:hover, .dropbtnTwo:hover, .aboutdropbtn:hover, .HomeButton:hover, .Homebtn:hover {
-    background-color: rgba(17, 0, 26, 0.822);
-}
-
-/* Links in dropdown */
-.dropdownOne-content a, .dropdownTwo-content a{
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-radius: .5em;
-    text-align: center;
-    background-color: rgb(87, 32, 109);
-}
-
-/* background color links on hover */
-.dropdownOne-content a:hover, .dropdownTwo-content a:hover {
-    background-color: rgba(214, 112, 255, 0.219)
-}
-  
-/* menu on hover */
-.dropdownOne:hover .dropdownOne-content {
-    display: block;
-    border-radius: .5em;
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    border-radius: .5em;
-    text-align: center;
-    background-color: rgb(87, 32, 109);
-    width: 95px;
-    margin-left: 14px;
-    margin-right: 34px;
-}
-
-.dropdownTwo:hover .dropdownTwo-content {
-    display: block;
-    border-radius: .5em;
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    border-radius: .5em;
-    text-align: center;
-    background-color: rgb(87, 32, 109);
-    width: 110px;
-    margin-left: 14px;
+    margin-left: 190px;
 }
 
 /* Art Projects Page */
@@ -417,7 +435,8 @@ h1.TraditionalHeader, h1.DigitalHeadText {
 .MonkeyContainer, img#Monkeys, .EyeStudyContainer, img#EyeStudyOne, .EyeStudyTwoContainer, img#EyeStudyTwo, .BrownHSContainer, img#HairStudyTwo, .PinkHSContainer, img#HairStudyThree, 
 .SmallHSContainer, img#HairStudyOne, .StrawberriesContainer, img#Strawberries, .LotusContainer, img#Lotus, .CupcakeContainer, img#Cupcake, 
 .ButterflyContainer, img#Butterfly, .FrozenContainer, img#Frozen, .JellyfishContainer, img#Jellyfish, .PaintingOneContainer, img#PaintingOne, .PaintingTwoContainer, img#PaintingTwo, 
-.PaintingThreeContainer, img#PaintingThree, .FogOneContainer, img#FogOne, .FogTwoContainer, img#FogTwo, .P1Container, img#P1, .P2Container, img#P2, .overlay {
+.PaintingThreeContainer, img#PaintingThree, .FogOneContainer, img#FogOne, .FogTwoContainer, img#FogTwo, .P1Container, img#P1, .P2Container, img#P2, .overlay,
+.WaterfallContainer, img#Waterfall, .PandaContainer, img#Panda {
     position: relative;
     height: 300px;
     border-radius: .5em;
@@ -455,7 +474,8 @@ div.Gallery {
   .MonkeyContainer:hover .overlay, .EyeStudyContainer:hover .overlay, .EyeStudyTwoContainer:hover .overlay, .BrownHSContainer:hover .overlay, .PinkHSContainer:hover .overlay, 
   .SmallHSContainer:hover .overlay, .StrawberriesContainer:hover .overlay, .LotusContainer:hover .overlay, .CupcakeContainer:hover .overlay,
   .ButterflyContainer:hover .overlay, .FrozenContainer:hover .overlay, .JellyfishContainer:hover .overlay, .PaintingOneContainer:hover .overlay, .PaintingTwoContainer:hover .overlay, 
-  .PaintingThreeContainer:hover .overlay, .FogOneContainer:hover .overlay, .FogTwoContainer:hover .overlay, .P1Container:hover .overlay, .P2Container:hover .overlay {
+  .PaintingThreeContainer:hover .overlay, .FogOneContainer:hover .overlay, .FogTwoContainer:hover .overlay, .P1Container:hover .overlay, .P2Container:hover .overlay, 
+  .WaterfallContainer:hover .overlay, .PandaContainer:hover .overlay{
     opacity: .9;
   }
   
@@ -850,25 +870,6 @@ img#instagram {
         margin: auto;
         width: fit-content;
         margin: auto;
-    }
-
-    input[type=text], input[type=email], select, textarea {
-        width: fit-content; 
-        border:none; 
-        border-radius: .5em; 
-        margin-top: 1em; 
-        margin-bottom: 1em; 
-        align-items: center;
-        justify-content: center;
-    }
-      
-    input[type=submit] {
-        background-color:rgba(77, 0, 107, 0.459);
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
     }
       
     /* Slide show one images */
