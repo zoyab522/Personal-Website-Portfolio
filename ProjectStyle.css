@@ -182,17 +182,6 @@ div.TraditionalBackgroundHead {
     opacity: 0.9;
 }
 
-div.AboutBackground {
-    background-image: url(final_images/RoboticsTwo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    opacity: 0.9;
-}
-
 div.DigitalArtBackground {
     background-image: url(final_images/UmbrellaOne.JPEG);
     background-repeat: no-repeat;
@@ -649,36 +638,6 @@ button:hover {
     background-color: rgba(17, 0, 26, 0.822); 
     cursor: pointer; 
 }
-
-/* About Page */
-
-.AboutHeadText {
-    text-align: center;
-}
-
-div.AboutMe {
-    background-color: rgba(77, 0, 107, 0.329);
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-img#ProfilePicture {
-    float: left;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-right: 3em;
-    border-radius: .5em;
-    width: 300px;
-}
-  .container {
-    padding: 60px;
-    margin-left: 12em;
-    margin-right: 12em;
-    align-items: center;
-    justify-content: center;
-  }
 
 /* Java and Python Images */
 div.COVIDGraph, div.MountainReel {
