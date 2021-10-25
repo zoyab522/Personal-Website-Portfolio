@@ -512,7 +512,7 @@ div.DigitalGallery {
 }
 
 .BridgeContainer, img#Lake, .SunflowerContainer, img#Sunflower, .F1Container, img#ForestOne, .F2Container, img#ForestTwo, .U1Container, img#FallUmbrella,
-.U2Container, img#SpringUmbrella {
+.U2Container, img#SpringUmbrella{
     position: relative;
     height: 250px;
     width: auto;
@@ -524,7 +524,7 @@ div.DigitalGallery {
 .U1Container:hover .overlayOne, .U2Container:hover .overlayOne, .CityDrawingContainer:hover .overlayTwo, .MemoriesContainer:hover .overlayTwo,
 .AquariumContainer:hover .overlayTwo, .WUContainer:hover .overlayThree, .ENBContainer:hover .overlayFour, .FIContainer:hover .overlayFour, 
 .QuarkContainer:hover .overlayFour, .LogoContainer:hover .overlayFive, .ReadingContainer:hover .overlayTwo, .HxHContainer:hover .overlayTwo,
-.MadnessContainer:hover .overlayTwo {
+.MadnessContainer:hover .overlayTwo, .WU1Container:hover .overlayThree {
     opacity: .9;
 }
 
@@ -543,6 +543,13 @@ div.DigitalGallery {
 }
 
 .WUContainer, img#WeeklyUpdate, .overlayThree {
+    position: relative;
+    width: 1100px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+.WU1Container, img#WeeklyUpdateOne, .overlayThree {
     position: relative;
     width: 1100px;
     border-radius: .5em;
