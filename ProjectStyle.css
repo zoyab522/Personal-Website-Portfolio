@@ -524,11 +524,13 @@ div.DigitalGallery {
 .U1Container:hover .overlayOne, .U2Container:hover .overlayOne, .CityDrawingContainer:hover .overlayTwo, .MemoriesContainer:hover .overlayTwo,
 .AquariumContainer:hover .overlayTwo, .WUContainer:hover .overlayThree, .ENBContainer:hover .overlayFour, .FIContainer:hover .overlayFour, 
 .QuarkContainer:hover .overlayFour, .LogoContainer:hover .overlayFive, .ReadingContainer:hover .overlayTwo, .HxHContainer:hover .overlayTwo,
-.MadnessContainer:hover .overlayTwo, .WU1Container:hover .overlayThree {
+.MadnessContainer:hover .overlayTwo, .WU1Container:hover .overlayThree, .BannerContainer:hover .overlaySix, 
+.SpiderManContainer:hover .overlaySeven{
     opacity: .9;
 }
 
-.CityDrawingContainer, img#CityDrawingOne, .MemoriesContainer, img#Memories, .AquariumContainer, img#Aquarium, .ReadingContainer, img#Reading, .overlayTwo {
+.CityDrawingContainer, img#CityDrawingOne, .MemoriesContainer, 
+img#Memories, .AquariumContainer, img#Aquarium, .ReadingContainer, img#Reading, .overlayTwo {
     position: relative;
     height: 400px;
     border-radius: .5em;
@@ -542,14 +544,21 @@ div.DigitalGallery {
     margin: 1em;
 }
 
-.WUContainer, img#WeeklyUpdate, .overlayThree {
+.WUContainer, img#WeeklyUpdate, .overlayThree{
     position: relative;
     width: 1100px;
     border-radius: .5em;
     margin: 1em;
 }
 
-.WU1Container, img#WeeklyUpdateOne, .overlayThree {
+img#SpiderManDrawing, .SpiderManContainer {
+    position: relative;
+    width: 600px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+.WU1Container, img#WeeklyUpdateOne, .overlayThree, .BannerContainer, img#TeamBanner {
     position: relative;
     width: 1100px;
     border-radius: .5em;
@@ -609,6 +618,35 @@ div.DigitalGallery {
     position: absolute;
     width: auto;
     height:300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+    margin: 1em;
+}
+
+.overlaySix {
+    position: absolute;
+    width: 1100px;
+    height:451px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+    margin: 1em;
+}
+
+.overlaySeven {
+    position: absolute;
+    width: 600px;
     top: 0;
     bottom: 0;
     left: 0;
