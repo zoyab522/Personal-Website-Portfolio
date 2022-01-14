@@ -525,7 +525,7 @@ div.DigitalGallery {
 .AquariumContainer:hover .overlayTwo, .WUContainer:hover .overlayThree, .ENBContainer:hover .overlayFour, .FIContainer:hover .overlayFour, 
 .QuarkContainer:hover .overlayFour, .LogoContainer:hover .overlayFive, .ReadingContainer:hover .overlayTwo, .HxHContainer:hover .overlayTwo,
 .MadnessContainer:hover .overlayTwo, .WU1Container:hover .overlayThree, .BannerContainer:hover .overlaySix, 
-.SpiderManContainer:hover .overlayTwo{
+.SpiderManContainer:hover .overlaySeven{
     opacity: .9;
 }
 
@@ -537,7 +537,7 @@ img#Memories, .AquariumContainer, img#Aquarium, .ReadingContainer, img#Reading, 
     margin: 1em;
 }
 
-.HxHContainer, img#HxH, .MadnessContainer, img#Madness, img#SpiderManDrawing, .SpiderManContainer {
+.HxHContainer, img#HxH, .MadnessContainer, img#Madness {
     position: relative;
     height: 400px;
     border-radius: .5em;
@@ -547,6 +547,13 @@ img#Memories, .AquariumContainer, img#Aquarium, .ReadingContainer, img#Reading, 
 .WUContainer, img#WeeklyUpdate, .overlayThree{
     position: relative;
     width: 1100px;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+img#SpiderManDrawing, .SpiderManContainer {
+    position: relative;
+    width: 600px;
     border-radius: .5em;
     margin: 1em;
 }
@@ -637,6 +644,19 @@ img#Memories, .AquariumContainer, img#Aquarium, .ReadingContainer, img#Reading, 
     margin: 1em;
 }
 
+.overlaySeven {
+    position: absolute;
+    width: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212425da;
+    margin: 1em;
+}
 
 .LogoContainer, img#Logo {
     position: relative;
