@@ -426,7 +426,7 @@ h1.TraditionalHeader, h1.DigitalHeadText {
 .ButterflyContainer, img#Butterfly, .FrozenContainer, img#Frozen, .JellyfishContainer, img#Jellyfish, .PaintingOneContainer, img#PaintingOne, .PaintingTwoContainer, img#PaintingTwo, 
 .PaintingThreeContainer, img#PaintingThree, .FogOneContainer, img#FogOne, .FogTwoContainer, img#FogTwo, .P1Container, img#P1, .P2Container, img#P2, .overlay,
 .WaterfallContainer, img#Waterfall, .PandaContainer, img#Panda, .RainyNightContainer, img#RainyNight, .NightTramContainer, img#NightTram, .NightOutContainer,
-img#NightOut {
+img#NightOut, .ForestContainer, img#Forest {
     position: relative;
     height: 300px;
     border-radius: .5em;
@@ -466,7 +466,7 @@ div.Gallery {
   .ButterflyContainer:hover .overlay, .FrozenContainer:hover .overlay, .JellyfishContainer:hover .overlay, .PaintingOneContainer:hover .overlay, .PaintingTwoContainer:hover .overlay, 
   .PaintingThreeContainer:hover .overlay, .FogOneContainer:hover .overlay, .FogTwoContainer:hover .overlay, .P1Container:hover .overlay, .P2Container:hover .overlay, 
   .WaterfallContainer:hover .overlay, .PandaContainer:hover .overlay, .RainyNightContainer:hover .overlay, .NightTramContainer:hover .overlay,
-  .NightOutContainer:hover .overlay {
+  .NightOutContainer:hover .overlay, .ForestContainer:hover .overlay {
     opacity: .9;
   }
   
