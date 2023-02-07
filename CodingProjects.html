@@ -23,168 +23,97 @@
                   </div>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                
               </div>
 
 
         <div class = "FirstCodeHeader"><h1>C O D I N G &nbsp; P R O J E C T S</h1>
-        <br>
-        <br>
-        </div>
-        </div>
+            <br><br><br><br>
 
-
-        <div class = "JavaHead" id = "JavaAnchor">
-            <br>
-            <br>
-            <h1 class = "JavaHeadText">J A V A</h1>
-            <br>
-            <p>
-            Some of my biggest programming projects are in Java. Here, you will find a project called <strong>Creative Space</strong>, a drawing program similar to
-            applications like Paint and Photoshop—only simpler. This project was created alongside Taylor Yang, another junior at ECG.    
-            </p>
-
-        <div class = "CreativeSpace">
-            <br>
-            <h2>C R E A T I V E &nbsp; S P A C E</h2>
-            <br>
-            <p>
-            With this project, the goal was to create something that resembles programs like Paint or Photoshop (though a bit simpler in terms of functionality).
-            We wanted to have a program that could draw shapes and lines of varying colors, shapes, and sizes, with an eraser, layers, the ability to undo/redo, 
-            and also clear the pane.
-            </p>
-            
-            <p>
-            When the user first runs the program, they will see a large window that should be the size of their screen, depending on the device. The window is 
-            titled “Creative Space”. On the left side of the screen, there is a sidebar with a series of interactive elements such as buttons and sliders, 
-            organized by categories using labels and button colors. The first two buttons fall under the ‘Brushes’ category: one brush is an eraser and the other 
-            is just a drawing brush, like a digital pen or pencil. If the user selects the drawing brush, they can drag their mouse across the screen to draw 
-            or write what they want. The eraser works the same way: the user can drag across the screen to erase what they want. In addition to the eraser 
-            function, I also added a ‘Clear All’ button, which allows the user to clear the screen of all visible elements and start on a fresh, blank slate. 
-            I added this function to make it easier to get rid of things without having to manually do so with the eraser.
-            </p>
-            <p>
-            The next set of buttons is called ‘Shapes’, in which the user can draw circles, rectangles, ellipses, and lines. If the setting for the outline and 
-            fill are not altered, no matter what shape is drawn, it will be transparent by default with a thin, black outline. If the user changes the line weight 
-            using the slider, none of the current shapes drawn on the pane will be altered, but any new shapes will be drawn with the changed line weight. 
-            This concept also applies to shapes drawn after the fill color/stroke color are changed. Once the user clicks, drags, and releases, a new shape or 
-            line will be added to the current layer, depending on what button was selected. 
-            Shapes are drawn from the starting point of where the mouse was clicked to the point where the mouse was released. 
-            This was done using event.getX() and event.getY() methods.
-            </p>
-            <p>
-            The final sets of buttons are for undoing and redoing actions, adding and removing layers, and adding images. 
-            All layers are added to a stack, and they stack up upon one another. Layers are not visible to the user, they are simply invisible drawing panes. 
-            We established a redoHistory and an undoHistory for the redo/undo buttons. These essentially keep track of the actions by the user so they can undo 
-            and redo. The ‘Add Image’ button allows the user to access their file directory on their device and add an image to their drawing. 
-            Parts of the image can be erased, drawn on top of, and cleared altogether.
-            </p>
-
-            <br>
-            <h2>I N T E R F A C E : </h2>
-            <br>
-            <div class = "CreativeSpaceGallery">
-
-                <div class="DrawContainer">
-                    <img id = "CSOne" src="code_images/Screen Shot 2021-05-03 at 8.27.53 AM.png" alt="Creative Space Interface: Drawing">
-                    <div class="CSoverlay">
-                    <div class="CScaption">Drawing on the Creative Space Interface. The white is the eraser. Everything is on one layer, including
-                    the image in the background. A clear all function can be used to clear the canvas (in the sidebar). The leaves on the canvas were
-                    drawn with changed stroke weight and colors.
-                    </div>
-                    </div>
-                </div>
-                
-                <div class="ShapesContainer">
-                    <img id = "CSTwo" src="code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png" alt="Creative Space Interface: Drawing Shapes and the Eraser">
-                    <div class="CSoverlay">
-                    <div class="CScaption">Drawing shapes, and using the eraser. Everything is on one layer. The white is the eraser. Shapes, lines, and 
-                    anything else drawn can have a changed opacity, fill color, stroke weight/color, etc. Opacity change not shown. A background
-                    image is still there.
-                    </div>
-                    </div>
-                </div>
-
-                <div class="ImageContainer">
-                    <img id = "CSThree" src="code_images/Screen Shot 2021-05-03 at 8.30.32 AM.png" alt="Creative Space Interface: Adding Images">
-                    <div class="CSoverlay">
-                    <div class="CScaption">Opening up the file directory to add images to the canvas. The background image was added previously. By clicking 
-                    the 'Add Image' button in the sidebar, images can be added.
-                    </div>
-                    </div>
-                </div>
-                
-            </div>
-
-            <br>
-            <br>
-        </div>
-        <br>
-        <br>
-        </div>
-
-
-        <div class = "PythonHead" id = "PythonAnchor">
-            <br>
-            <br>
-            <h1 class = "PythonHeadText">P Y T H O N</h1>
-            <br>
-            <p>
-            Over the course of the last year, I've been developing my understanding of Python. The two projects you'll find below are largely about
-            data analysis and the use of graphs. The first project is an analysis of COVID mortality rates in Maryland from last summer, using real data from the 
-            time the project was created. The second project is a Python Scripting Project I did using a 3D Modeling software called Blender, where I 
-            photorealistically modeled a donut in a cafe setting. 
-            The third project is a simulation of what weathering would look like on a mountain over time using animation. This 
-            project also uses real data and incorporates it into the simulation and the design of the terrain itself, and incorporates some aspects of machine
-            learning.
-            </p>
-
-            <div class= "BlenderHead" id="BlenderAnchor">
+            <div class = "CreativeSpace">
                 <br>
-                <h2>B L E N D E R &nbsp; P R O J E C T S - P Y T H O N &nbsp; S C R I P T I N G</h2>
-                <h2>A N D &nbsp; 3 D &nbsp; M O D E L I N G</h2>
+                <h2>C R E A T I V E &nbsp; S P A C E</h2>
+                <p>
+                <strong>Goal:</strong> Create something that resembles programs like Paint or Photoshop
+                We wanted to have a program that could draw shapes and lines of varying colors, shapes, and sizes, with an eraser, layers, the ability to undo/redo, 
+                and also clear the pane.
+                </p>
+                <p>
+                <strong>Skills:</strong> Object-Oriented Programming, Pair-Programming, JavaFX, Java, NetBeans, GUIs
+                </p>
+                <p>
+                <strong>Additional Details:</strong> The program also support saving and exporting functionality!
+                </p>
+    
                 <br>
-                <p>Used Blender's Cycle's renderer to model, sculpt, texture, and construct a scene of a donute in a cafe. 
-                    Everything is modeled from scratch in Blender. The cup was custom UV-unwrapped and the donut was texture painted and refined using nodes 
-                    (scripted in Python). The bricks and marble counter are Blender texture packs from POLIIGON.
+                <h2>I N T E R F A C E : </h2>
+                <div class = "CreativeSpaceGallery">
+    
+                    <div class="DrawContainer">
+                        <img id = "CSOne" src="code_images/Screen Shot 2021-05-03 at 8.27.53 AM.png" alt="Creative Space Interface: Drawing">
+                        <div class="CSoverlay">
+                        <div class="CScaption">Drawing on the Creative Space Interface. The white is the eraser. Everything is on one layer, including
+                        the image in the background. A clear all function can be used to clear the canvas (in the sidebar). The leaves on the canvas were
+                        drawn with changed stroke weight and colors.
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ShapesContainer">
+                        <img id = "CSTwo" src="code_images/Screen Shot 2021-05-03 at 8.29.08 AM.png" alt="Creative Space Interface: Drawing Shapes and the Eraser">
+                        <div class="CSoverlay">
+                        <div class="CScaption">Drawing shapes, and using the eraser. Shapes, lines, and 
+                        anything else drawn can have a changed opacity, fill color, stroke weight/color, etc. A background
+                        image is still there.
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="ImageContainer">
+                        <img id = "CSThree" src="code_images/Screen Shot 2021-05-03 at 8.30.32 AM.png" alt="Creative Space Interface: Adding Images">
+                        <div class="CSoverlay">
+                        <div class="CScaption">Opening up the file directory to add images to the canvas. The background image was added previously. By clicking 
+                        the 'Add Image' button in the sidebar, images can be added.
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <br>
+                <h2>B L E N D E R : &nbsp;P Y T H O N &nbsp; S C R I P T I N G</h2>
+                <br>
+                <p>
+                <strong>Goal:</strong> Model, sculpt, texture, and construct a photorealistic scene using Blender's Cycles renderer. 
+                Learn to extend some of Blender's functions using Python in Blender's built-in editor.
+                    </p>
+                    <p>
+                    <strong>Skills:</strong> Python, UV Unwrapping, 3D Graphing, Animation
+                    </p>
+                    <p>
+                    <strong>Additional Details:</strong> The cup was custom UV-unwrapped and the donut was texture painted
+                    and refined using Geometry Nodes. The sprinkles were done using a Python script to create multiple object instances. 
+                    </p>
+                <p>
                 <br>
                 <br>
                 <div class id = "Donut">
                     <img id = "DonutRender" src = "final_images/Donut.png">
                 </div>
                 </p>
-            </div>
-
-            <div class = "COVID" id="COVIDMortality">
                 <br>
-                <h2>M A R Y L A N D <br>C O V I D &nbsp; M O R T A L I T Y </h2>
+                <h2>C O V I D &nbsp; M O R T A L I T Y </h2>
                 <h2>2 0 2 0 &nbsp; A N A L Y S I S</h2>
                 <br>
-                <p>
-                I used real data from a .csv file containing COVID-19 mortality rates for states across the country, focusing on Maryland for this project. 
-                I used the death rates to create a series of graphs to eventually calculate the approximate mortality rate of the state.
-                </p>
-                <p>
-                In most of my graphs, I had to find dy and dx, smooth them, divide, graph it, and then examine the end of the graph. The number the line in the 
-                final graph appears to approach was the approximate the mortality rate. My final result was a Jupyter notebook with a graph of
-                smoothdy / smoothdx and an added text field explaining what limit I estimated.
-                </p>
-                <p>
-                First, I put all the positive cases over time into an actual graph that made the data easier to visualize and understand. I created another graph for 
-                the deaths over time as well. Then, I graphed the derivates for both of the above graphs, and smoothed them out to make them easier to understand.
-                This laid the foundation for my next step.
-                </p>
-                <p>
-                Finally, I plotted smooth dx over smooth dy, combining the previous two graphs into one to estimate the mortality rate. I zoomed in on the very 
-                end of the first graph to approximate the mortality rate as best I can. My results are shown in the images below.
-                </p>
-                <p>
-                <strong>Results Summary: </strong>
-                Over time, the mortality rate decreases (with some extremely small spikes that become noticeable near the end). 
-                The mortality rate seemed to come close to about 2% at first, but I had to zoom in to get a more accurate value. 
-                The mortality rate approached about 1.8%, which was just over half the mortality rate from the beginning of the pandemic (which was 3.4%)!
-                </p>
-                
-                </p>
+                    <strong>Goal:</strong> Use real data from .csv files containing COVID mortality rates across the USA to calculate the approximate mortality rate
+                    in Maryland.
+                        </p>
+                        <p>
+                        <strong>Skills:</strong> Python, Data Analysis, Google Colab, Excel, Jupyter Notebook
+                        </p>
+                        <p>
+                        <strong>Additional Details (Results Summary):</strong> Over time, I found that the mortality rate was decreasing (likely due to more people quarantining and wearing masks). 
+                        The mortality rate approached about 1.8%, which was just over half the mortality rate from the beginning of the pandemic (which was 3.4%)!
+                        </p>               
                 <br>
                 <h2>G R A P H: </h2>
                 <br>
@@ -192,104 +121,64 @@
                 <img id = "Results" src = "code_images/GraphResults.png">
                 </div>
                 <br>
-            </div>
-
-        <div class = "Weathering" id="Weathering">
-            <br>
-            <h2>W E A T H E R I N G<br>P R O J E C T</h2>
-            <br>
-            <p>
-                This project was created alongside another junior ECG student, Natalie Earnhardt.
-            </p>
-
-            <p>
-                This project entails the creation of a simulation using real data. It was completed in September, after just taking an environmental science course. I was also developing an interest in animation at the time I began working on this.
-                Simulation: what erosion would look like on rough or mountain-like terrain. Making this simulation was difficult because no exact formula 
-                could calculate erosion rates due to the many natural processes and factors involved.
-                One of the first deliverables of the project was the generation of a realistic, 3D surface plot. I created a .csv file with over five thousand 
-                coordinates to generate a piece of rough terrain.
-                Each coordinate represented an altitude. To display it through code, I transformed it to a long format, and then added an animation that could 
-                make the graph rotate and display all the angles of the terrain. To make the graph rotate, I used an azimuth angle.
-                Four factors for erosion in the simulation: precipitation, wind speed, temperature, and humidity.
-            </p>
-
-            <p>
-                Interactive: factors are adjustable through the use of sliders. There is also a drop-down menu with four different soil types/compositions: 
-                loam, clay, cropland, and limestone.
-                In creating the formula, I created five variables: one for each factor, and a fifth variable for the land type. Each of the first four variables 
-                were assigned maximum values. I figured out how to incorporate them into the formula with a series of if statements which standardized how much a certain value affected the simulation on a scale of zero to one. Different time scales were used on different land types for changes to be noticeable.
-                The final formula adds all four, standardized variables together based on the land type and timescale. To create the final, animated graph 
-                that would display the erosion rate, the first thing I did was convert the original file with the coordinates for the terrain into a scatterplot. 
-                The graph moved based on a variable called ‘i’, which changed the altitudes of the plot over time using the formula.
-                The final outcome of the project displays a 3D scatterplot of terrain which displayed the rate of erosion depending on the factors a user alters.
-            
-            <h3>P A R T &nbsp; O N E<br>T E R R A I N &nbsp; D I S P L A Y &nbsp;( S E E &nbsp; I M A G E &nbsp; O N E ) </h3>
-            <p>
-                The purpose of this is to show a clear visualization of the mountain as the weathering animation is a scatterplot version of the terrain. 
-                First, the required packages and files were imported for the display. Then, I transformed the data into a long format so that the plot could 
-                be created. A trisurf command was used for the 3D plot because there was an x, y, and a z axis. To animate the visual, an azimuth angle was 
-                used. An azimuth is an angular measurement in a spherical coordinate system. 
-            </p>
-
-            <h3> P A R T &nbsp; T W O<br>F I N A L &nbsp; A N I M A T I O N</h3>
-            <p>
-                To actually animate the graph and display the animation based on the factors, a formula was created using the variables defined in the code snippet. This formula is called the 
-                'weathering factor’ (ef), and was put together after carefully analyzing all research and real data implemented in the project. 
-                Finally, I added a print statement that calculated the erosion factor using the formula.
-                The final graph is actually an animated 3D scatterplot because it was easier to work with rather than the other graph shown earlier. 
-                That is why the line ax.scatter is used at the end of the # Creates the graph section.
-                The graph was animated using anim (fig, frame, frames, blit, repeat). This produces the result.
-            </p>
-
-            <p>
-                <strong>Final results of a sample animation are displayed in the second image below.</strong>The final graph can display the change in 
-                limestone over 2,000,000 years, the change in clay and cropland over 100 years, and it displays the change in loam over 50 years. 
-                These were timescales that were used to show noticeable change. Below, watch the blue slider to see the animation of weathering occurring over 
-                time for loam.
-            </p>
-
-            <div class id = MountainReel>
-                <img id = "Display" src = "code_images/MountainRotation.png">
-                <img id = "Ani" src = "code_images/MountainScatter.png">
                 <br>
+                <h2>W E A T H E R I N G</h2>
+                <br>
+                <strong>Goal:</strong> Use real data to simulate weathering on a rough or mountain-like terrain. 
+                in Maryland.
+                    </p>
+                    <p>
+                    <strong>Skills:</strong> Python, Data Analysis, Google Colab, Animation, 3D Modeling
+                    </p>
+                    <p>
+                    <strong>Additional Details (Results Summary):</strong> Making this simulation was difficult because no exact formula 
+                    could calculate erosion rates due to the many natural processes and factors involved.
+                    One of the first deliverables of the project was the generation of a realistic, 3D surface plot. I created a .csv file with over five thousand 
+                    coordinates to generate a piece of rough terrain.
+                    <br>
+                    <br>
+                    Four factors for erosion in the simulation: precipitation, wind speed, temperature, and humidity.
+                    <br>
+                    Interactive: factors are adjustable through the use of sliders. There is also a drop-down menu with four different soil types/compositions: 
+                    loam, clay, cropland, and limestone. The final outcome of the project displays a 3D scatterplot of terrain which displayed the rate of erosion depending on the factors a user alters.
+                    <br>
+                    </p>   
+    
+                <div class id = MountainReel>
+                    <img id = "Display" src = "code_images/MountainRotation.png">
+                    <img id = "Ani" src = "code_images/MountainScatter.png">
+                </div>
             </div>
-            <br>
-        </div>
-        <br>
-        <br>
-        </div>
 
-        <footer>
-            <div class = "footerButtons">
-             <div class = "flexible">
-                 <p>Created by Zoya Bawangaonwala | May 2021 
-                 </p>
-                 <a href="CodingProjects.html#CodeAnchor"><button class = "FB">Back to Top</button></a>
-                 <a href="Homepage.html"><button class = "FB">Back to Home</button></a>
-            <a href = "mailto:bawangaonwalaz@guilford.edu"><button class = "FB">Email</button></a>
-            <br>
-            <div class = "SocialBar">
-             <div class="SocialsIcons">
-             
-             <div class="icon github">
-             <a href = "https://github.com/zoyab522"><span><img src = "final_images/githubIcon.png" id = github></i></span></a>
-             </div>
-             </div>
-  
-             <div class = "SocialIconTwo">
-             <div class="icon instagram">
-             <a href = "https://www.instagram.com/zoyasketches/"><span><img src = "final_images/instagramIcon.png" id = instagram></i></span></a>
-             </div>
-             
-           </div>
-           </div>
-            </div>
-  
-           </div>
-  
-            </div>
-         </footer>
+            <footer>
+                <div class = "footerButtons">
+                 <div class = "flexible">
+                     <a href="CodingProjects.html#CodeAnchor"><button class = "FB">Back to Top</button></a>
+                     <a href="Homepage.html"><button class = "FB">Back to Home</button></a>
+                <a href = "mailto:bawangaonwalaz@guilford.edu"><button class = "FB">Email</button></a>
+                <br>
+                <div class = "SocialBar">
+                 <div class="SocialsIcons">
+                 
+                 <div class="icon github">
+                 <a href = "https://github.com/zoyab522"><span><img src = "final_images/githubIcon.png" id = github></i></span></a>
+                 </div>
+                 </div>
+      
+                 <div class = "SocialIconTwo">
+                 <div class="icon instagram">
+                 <a href = "https://www.instagram.com/zoyasketches/"><span><img src = "final_images/instagramIcon.png" id = instagram></i></span></a>
+                 </div>
+                 
+               </div>
+               </div>
+                </div>
+      
+               </div>  
+             </footer>
 
+        </div>
+        </div>
 
     </body>
 </html>

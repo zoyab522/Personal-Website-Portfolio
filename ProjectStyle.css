@@ -201,15 +201,14 @@ div.CodingBackgroundHead {
     background-position: center;
     margin-left: 0px;
     margin-right: 0px;
-    opacity: 0.9;
+    opacity: 0.82;
 }
 
 div.TraditionalHeader, div.DigitalHeadText, div.FirstCodeHeader, div.AboutMeHeaderText {
-    background-color:rgba(12, 12, 12, 0.87);
+    background-color:rgba(12, 12, 12, 0.911);
     background-attachment: fixed;
     background-size: cover;
     padding-top: 7em;
-    padding-bottom: 7em;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
@@ -220,7 +219,6 @@ div.HeadText {
     background-attachment:fixed;
     background-size: cover;
     padding-top: 7em;
-    padding-bottom: 7em;
     padding-left: 4em;
     padding-right: 4em;
     line-height: 160%;
