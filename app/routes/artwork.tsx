@@ -67,6 +67,7 @@ export default function Artwork() {
     { src: "/assets/final_images/digital/cat_rain.png", alt: "Cat Rain" },
     { src: "/assets/final_images/digital/dolomites.png", alt: "Dolomites" },
     { src: "/assets/final_images/digital/hawaii_black_sand.png", alt: "Hawaii Black Sand" },
+    { src: "/assets/final_images/digital/Rearview_mirror.jpg", alt: "Rearview Mirror Sunset" },
     { src: "/assets/final_images/digital/arcane.jpg", alt: "Arcane" },
     { src: "/assets/final_images/digital/portugal_tree.jpg", alt: "Portugal Tree" },
     { src: "/assets/final_images/digital/portugal_white.jpg", alt: "Portugal White" },
