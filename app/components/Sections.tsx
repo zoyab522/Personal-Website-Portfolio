@@ -676,20 +676,19 @@ export function ProjectsSection() {
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
                   <li>• Built with <strong>React</strong> and <strong>Remix</strong> framework</li>
-                  <li>• <strong>Tailwind CSS</strong> for responsive design</li>
                   <li>• Features smooth scrolling animations and interactive elements</li>
                   <li>• Added a light/dark mode 🌖</li>
                 </ul>
                 
                 <div className="flex flex-wrap gap-2 mb-4 archive-project-tags">
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono">
-                    React
+                    React Router
                   </span>
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono">
-                    JavaScript
+                    TypeScript
                   </span>
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono">
-                    Adobe XD
+                    Tailwind CSS
                   </span>
                 </div>
                 <div className="text-center mb-4">
