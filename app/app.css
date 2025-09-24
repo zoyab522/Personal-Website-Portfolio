@@ -1,0 +1,631 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", "Inter", "Arial", "Helvetica", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "Consolas", "Monaco", "Menlo", "Ubuntu Mono", "Courier New", monospace;
+}
+
+html,
+body {
+  background-color: #fffef4 !important; /* Slightly less warm off-white background */
+  background-image: 
+    linear-gradient(to bottom, rgba(139, 69, 19, 0.25) 0%, rgba(139, 69, 19, 0.15) 50%, rgba(139, 69, 19, 0.08) 100%),
+    radial-gradient(circle, rgba(139, 69, 19, 0.25) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 24px 24px !important;
+  background-position: 0 0, 0 0 !important;
+  background-attachment: fixed !important;
+  color: #160a05; /* Dark brown text */
+  font-family: 'Montserrat', 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 500; /* Medium font weight for all Montserrat text */
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles */
+.dark html,
+.dark body {
+  background-color: transparent !important; /* Make background transparent so dots show */
+  background-image: radial-gradient(circle, rgba(244, 228, 188, 0.111) 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+  background-position: 0 0 !important;
+  background-attachment: fixed !important;
+  color: #F5F5DC; /* Light cream text */
+}
+
+/* Dark mode body background */
+.dark body {
+  background-color: #1a1a1a !important; /* Dark background */
+}
+
+/* Dark mode navigation */
+.dark .nav-bg {
+  background-color: rgba(26, 26, 26, 0.98) !important;
+  border-color: rgba(139, 69, 19, 0.3) !important;
+}
+
+/* Dark mode text colors */
+.dark .text-dark-brown {
+  color: #F5F5DC !important;
+}
+
+.dark .text-sepia {
+  color: #F4E4BC !important; /* Much lighter sepia */
+}
+
+.dark .text-gray-600 {
+  color: #D0D0D0 !important; /* Much lighter gray */
+}
+
+/* Dark mode specific text colors */
+.dark .text-dark-brown-alt {
+  color: #D0D0D0 !important; /* Less stark gray for dark brown text */
+}
+
+.dark .text-sepia-alt {
+  color: #F4E4BC !important; /* Light sepia for accent text */
+}
+
+.dark .hover-text-sepia-dark:hover {
+  color: #F4E4BC !important; /* Light sepia for hover states in dark mode */
+}
+
+.dark .bg-sepia-alt {
+  background-color: #F4E4BC !important; /* Light sepia background in dark mode */
+}
+
+.dark .hover-bg-sepia-dark:hover {
+  background-color: #F4E4BC !important; /* Light sepia hover background in dark mode */
+}
+
+/* Dark mode text for light backgrounds */
+.dark .text-white {
+  color: #2D1810 !important; /* Dark brown text for light backgrounds in dark mode */
+}
+
+/* About Me section dark mode - match hero section colors */
+.dark .about-heading {
+  color: #F5F5DC !important; /* Same as hero section main text */
+}
+
+.dark .section-divider {
+  background-color: #F4E4BC !important; /* Same as hero section accent */
+}
+
+/* Dark mode tech tag styling */
+.dark .border-sepia {
+  border-color: rgba(244, 228, 188, 0.5) !important; /* 50% translucent cream border for tech tags */
+}
+
+.dark .bg-sepia {
+  background-color: #F4E4BC !important; /* Cream dots for tech tags */
+}
+
+/* Dark mode profile image styling */
+.dark .profile-image-main {
+  border-color: rgba(244, 228, 188, 0.5) !important; /* 50% translucent cream border for profile image */
+}
+
+.dark .profile-image-background {
+  background-color: rgba(244, 228, 188, 0.3) !important; /* Cream background for profile image */
+}
+
+/* Dark mode project image styling */
+.dark .project-image-main {
+  border-color: rgba(244, 228, 188, 0.5) !important; /* 50% translucent cream border for project images */
+}
+
+.dark .project-image-main-pokedex {
+  border-color: rgba(244, 228, 188, 0.5) !important; /* 50% translucent cream border for Pokedex project image */
+}
+
+.dark .project-image-background {
+  background-color: rgba(244, 228, 188, 0.15) !important; /* Cream background for project images */
+}
+
+.dark .project-image-background:hover {
+  background-color: rgba(244, 228, 188, 0.25) !important; /* Cream background hover for project images */
+}
+
+.dark .project-image-background-pokedex {
+  background-color: rgba(244, 228, 188, 0.15) !important; /* Cream background for Pokedex project image */
+}
+
+.dark .project-container-pokedex:hover .project-image-background-pokedex {
+  background-color: rgba(244, 228, 188, 0.25) !important; /* Cream background hover for Pokedex project image */
+}
+
+
+/* Dark mode backgrounds */
+.dark .bg-off-white {
+  background-color: #2a2a2a !important;
+}
+
+.dark .bg-white {
+  background-color: #2a2a2a !important;
+}
+
+/* Dark mode borders */
+.dark .border-gray-200 {
+  border-color: rgba(244, 228, 188, 0.4) !important; /* Lighter sepia border */
+}
+
+.dark .border-sepia-alt {
+  border-color: rgba(244, 228, 188, 0.5) !important; /* 50% translucent cream border */
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(61, 30, 6, 0.6);
+  border-radius: 4px;
+}
+
+
+/* Smooth animations */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Typing animation */
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end);
+  background-color: rgba(139, 69, 19, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.typing-animation::after {
+  content: '|';
+  color: #2D1810;
+  font-weight: bold;
+  animation: blink-cursor 1s infinite;
+  margin-left: 2px;
+}
+
+/* Dark mode typing cursor */
+.dark .typing-animation::after {
+  color: #F4E4BC !important; /* Cream colored cursor in dark mode */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-cursor {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
+
+/* Custom color classes */
+.nav-bg {
+  background-color: rgba(242, 240, 230, 0.978);
+}
+
+/* Custom breakpoint for 950px */
+@media (max-width: 949px) {
+  .about-section-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Custom breakpoint for 700px */
+@media (max-width: 699px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: flex !important;
+  }
+}
+
+/* Force mobile navigation padding */
+@media (max-width: 767px) {
+  .nav-bg a:first-child img {
+    margin-left: 16px !important;
+  }
+  .nav-bg > div > div:last-child {
+    padding-right: 48px !important;
+  }
+}
+
+.text-dark-brown {
+  color: #2D1810;
+}
+
+.text-sepia {
+  color: #5D2E0A;
+}
+
+.text-dark-brown-alt {
+  color: #2D1810;
+}
+
+.text-sepia-alt {
+  color: #5D2E0A;
+}
+
+.bg-sepia-alt {
+  background-color: #5D2E0A;
+}
+
+.bg-off-white {
+  background-color: #f8f6f0;
+}
+
+.border-sepia-alt {
+  border-color: #5D2E0A;
+}
+
+.text-sepia-dark {
+  color: #3D1E06;
+}
+
+.hover-text-sepia-dark:hover {
+  color: #3D1E06;
+}
+
+.bg-sepia-dark {
+  background-color: #3D1E06;
+}
+
+.hover-bg-sepia-dark:hover {
+  background-color: #3D1E06;
+}
+
+.bg-sepia {
+  background-color: #5D2E0A;
+}
+
+.hover-bg-sepia-dark:hover {
+  background-color: #3D1E06;
+}
+
+.hover-text-sepia:hover {
+  color: #5D2E0A;
+}
+
+.border-sepia {
+  border-color: #5D2E0A;
+}
+
+.hover-bg-off-white:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+}
+
+.hover-bg-typing-highlight:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+}
+
+/* Fade in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Profile image border styles */
+.profile-image-container {
+  position: relative;
+  margin-top: 2rem;
+  transition: transform 0.1s ease-out;
+}
+
+.profile-image-main {
+  width: 24rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+  border: 2px solid #2512048c;
+  padding: 0.5rem;
+}
+
+.profile-image-background {
+  position: absolute;
+  inset: 0;
+  width: 24rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+  background-color: rgba(109, 70, 46, 0.3);
+  z-index: -20;
+  transform: rotate(1deg);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+.profile-image-caption {
+  text-align: center;
+  margin-top: 2rem;
+  color: #2D1810;
+  font-size: 0.875rem;
+}
+
+.about-heading {
+  margin-top: -2rem;
+}
+
+/* Section divider line */
+.section-divider {
+  align-self: center;
+}
+
+/* Square-shaped project containers */
+.project-folder {
+  position: relative;
+  background-color: rgba(255, 254, 244, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(93, 46, 10, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+/* Project background hover effects */
+.project-bg {
+  background-color: rgba(109, 70, 46, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.project-bg:hover {
+  background-color: rgba(109, 70, 46, 0.5);
+}
+
+/* Project container with profile photo-style border */
+.project-container {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project-container:hover {
+  transform: scale(1.02) rotate(1deg);
+}
+
+/* Project 2 (Pokedex) container doesn't rotate */
+.project-container-pokedex:hover {
+  transform: scale(1.02);
+}
+
+.project-image-main {
+  border-radius: 0.5rem;
+  border: 2px solid #2512048c;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-image-main:hover {
+  transform: rotate(-1deg);
+}
+
+/* Pokedex image border doesn't rotate at all */
+.project-image-main-pokedex {
+  border-radius: 0.5rem;
+  border: 2px solid #2512048c;
+  padding: 0.5rem;
+  transition: none;
+}
+
+.project-image-main-pokedex:hover {
+  transform: none;
+}
+
+/* Pokedex background rotates instead */
+.project-image-background-pokedex {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background-color: rgba(109, 70, 46, 0.15);
+  z-index: -20;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Pokedex background rotates when container is hovered */
+.project-container-pokedex:hover .project-image-background-pokedex {
+  background-color: rgba(109, 70, 46, 0.25);
+  transform: rotate(-1deg);
+}
+
+.project-image-background {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background-color: rgba(109, 70, 46, 0.15);
+  z-index: -20;
+  transition: background-color 0.3s ease;
+}
+
+.project-image-background:hover {
+  background-color: rgba(109, 70, 46, 0.25);
+}
+
+/* Tech tag styling */
+.tech-tag {
+  background-color: rgba(139, 69, 19, 0.1);
+}
+
+/* Project image positioning */
+.project-image-center {
+  object-position: center center;
+}
+
+.project-image-pokedex {
+  object-position: center 15%;
+}
+
+.project-image-chips {
+  object-position: center center;
+}
+
+/* Clickable project boxes */
+.project-box-link {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-box-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Archive project folder alignment */
+.project-folder {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-folder:hover {
+  transform: scale(1.02);
+}
+
+.project-folder:hover svg {
+  color: #3D1E06;
+}
+
+/* Dark mode: don't change icon color on hover */
+.dark .project-folder:hover svg {
+  color: inherit !important;
+}
+
+.archive-project-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.archive-project-header {
+  flex-shrink: 0;
+}
+
+.archive-project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.archive-project-tags {
+  margin-top: auto;
+}
+
+/* Social sidebar styles */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.writing-vertical + div {
+  margin-left: 20px;
+}
+
+/* Blender project hover effect */
+.blender-project {
+  position: relative;
+}
+
+.blender-project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/final_images/digital/Donut.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.blender-project:hover::before {
+  opacity: 0.9;
+}
+
+.blender-project > div {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.blender-project:hover > div {
+  opacity: 0;
+}
+
+/* Masonry-style artwork grid */
+.artwork-masonry {
+  columns: 4;
+  column-gap: 1rem;
+  break-inside: avoid;
+}
+
+.artwork-masonry img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  display: block;
+  break-inside: avoid;
+}
+
+@media (max-width: 1200px) {
+  .artwork-masonry {
+    columns: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .artwork-masonry {
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .artwork-masonry {
+    columns: 1;
+  }
+}
+
+
+
