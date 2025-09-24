@@ -285,9 +285,14 @@ export function ProjectsSection() {
                     <img 
                       src={hoveredGif === "/assets/storybook_demo.gif" ? "/assets/storybook_demo.gif" : "/assets/storybook-static.png"}
                       alt="Pearson Education UI Library Demo" 
-                      className="w-full h-full object-cover object-center rounded-md project-image-center"
+                      className="w-full h-full object-cover object-center rounded-md project-image-center md:hidden lg:block"
                       onMouseEnter={() => handleGifHover("/assets/storybook_demo.gif")}
                       onMouseLeave={handleGifLeave}
+                    />
+                    <img 
+                      src="/assets/storybook_demo.gif"
+                      alt="Pearson Education UI Library Demo" 
+                      className="w-full h-full object-cover object-center rounded-md project-image-center hidden md:block lg:hidden"
                     />
                   </div>
                   <div className="project-image-background w-full h-[345px]"></div>
@@ -307,9 +312,14 @@ export function ProjectsSection() {
                     <img 
                       src={hoveredGif === "/assets/live_demo_been_gif.gif" ? "/assets/live_demo_been_gif.gif" : "/assets/been_static_pic.png"}
                       alt="Travel Tracker App Demo" 
-                      className="w-full h-full object-cover object-center rounded-md project-image-center"
+                      className="w-full h-full object-cover object-center rounded-md project-image-center md:hidden lg:block"
                       onMouseEnter={() => handleGifHover("/assets/live_demo_been_gif.gif")}
                       onMouseLeave={handleGifLeave}
+                    />
+                    <img 
+                      src="/assets/live_demo_been_gif.gif"
+                      alt="Travel Tracker App Demo" 
+                      className="w-full h-full object-cover object-center rounded-md project-image-center hidden md:block lg:hidden"
                     />
                   </div>
                   <div className="project-image-background w-full h-[345px]"></div>
@@ -394,9 +404,14 @@ export function ProjectsSection() {
                     <img 
                       src={hoveredGif === "/assets/chips_challenge_live_demo.gif" ? "/assets/chips_challenge_live_demo.gif" : "/assets/chips_challenge_static.png"}
                       alt="AI-Driven Agent Chip's Challenge Demo" 
-                      className="w-full h-full object-cover object-center rounded-md project-image-chips"
+                      className="w-full h-full object-cover object-center rounded-md project-image-chips md:hidden lg:block"
                       onMouseEnter={() => handleGifHover("/assets/chips_challenge_live_demo.gif")}
                       onMouseLeave={handleGifLeave}
+                    />
+                    <img 
+                      src="/assets/chips_challenge_live_demo.gif"
+                      alt="AI-Driven Agent Chip's Challenge Demo" 
+                      className="w-full h-full object-cover object-center rounded-md project-image-chips hidden md:block lg:hidden"
                     />
                   </div>
                   <div className="project-image-background w-full h-[345px]"></div>
