@@ -248,7 +248,7 @@ export function ProjectsSection() {
                 <div className="flex flex-wrap gap-2 mb-6 justify-center xl:justify-start">
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono border border-sepia flex items-center tech-tag">
                     <div className="w-3 h-3 rounded-full bg-sepia mr-2"></div>
-                    React
+                    React Aria
                   </span>
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono border border-sepia flex items-center tech-tag">
                     <div className="w-3 h-3 rounded-full bg-sepia mr-2"></div>
@@ -257,10 +257,6 @@ export function ProjectsSection() {
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono border border-sepia flex items-center tech-tag">
                     <div className="w-3 h-3 rounded-full bg-sepia mr-2"></div>
                     Storybook
-                  </span>
-                  <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono border border-sepia flex items-center tech-tag">
-                    <div className="w-3 h-3 rounded-full bg-sepia mr-2"></div>
-                    Figma
                   </span>
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono border border-sepia flex items-center tech-tag">
                     <div className="w-3 h-3 rounded-full bg-sepia mr-2"></div>
@@ -455,7 +451,7 @@ export function ProjectsSection() {
                   </span>
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono border border-sepia flex items-center tech-tag">
                     <div className="w-3 h-3 rounded-full bg-sepia mr-2"></div>
-                    Dynamic Goal Priority
+                    Data Structures
                   </span>
                 </div>
                 <div className="text-center xl:text-left mb-4">
@@ -546,7 +542,7 @@ export function ProjectsSection() {
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
                   <li>• <strong>1000+ Pokémon</strong> with data from PokeAPI</li>
-                  <li>• <strong>Evolution chains</strong> and relationships mapped</li>
+                  <li>• <strong>Evolution chains</strong> and relationships</li>
                   <li>• <strong>Base stats</strong> including HP, Attack, Speed</li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-4 archive-project-tags">
@@ -635,8 +631,8 @@ export function ProjectsSection() {
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
                   <li>• <strong>3D Modeling</strong> and sculpting</li>
-                  <li>• <strong>Material creation</strong> and texturing</li>
-                  <li>• <strong>Lighting</strong> and rendering</li>
+                  <li>• <strong>UV unwrapping</strong> and material creation</li>
+                  <li>• <strong>Nodes</strong> for texture and color</li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-4 archive-project-tags">
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono">
@@ -680,9 +676,9 @@ export function ProjectsSection() {
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
                   <li>• Built with <strong>React</strong> and <strong>Remix</strong> framework</li>
-                  <li>• Styled with <strong>Tailwind CSS</strong> for responsive design</li>
+                  <li>• <strong>Tailwind CSS</strong> for responsive design</li>
                   <li>• Features smooth scrolling animations and interactive elements</li>
-                  <li>• Includes dark/light mode toggle and mobile-first approach</li>
+                  <li>• Added a light/dark mode 🌖</li>
                 </ul>
                 
                 <div className="flex flex-wrap gap-2 mb-4 archive-project-tags">
