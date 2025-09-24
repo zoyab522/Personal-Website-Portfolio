@@ -72,7 +72,7 @@ export function AboutSection() {
             </div>
             
             {/* See More Button - Mobile only, after first paragraph */}
-            <div className={`md:hidden text-center ${isAboutExpanded ? 'hidden' : 'block'}`}>
+            <div className={`text-center md:hidden ${isAboutExpanded ? '!hidden' : ''}`}>
               <button 
                 onClick={() => setIsAboutExpanded(true)}
                 className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
@@ -94,7 +94,7 @@ export function AboutSection() {
             </div>
             
             {/* See More Button - Visible on screens 800px and above, after second paragraph */}
-            <div className={`hidden md:block text-center ${isAboutExpanded ? 'hidden' : 'block'}`}>
+            <div className={`text-center hidden md:block ${isAboutExpanded ? '!hidden' : ''}`}>
               <button 
                 onClick={() => setIsAboutExpanded(true)}
                 className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
