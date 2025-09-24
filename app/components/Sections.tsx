@@ -45,70 +45,111 @@ export function SocialSidebar() {
 }
 
 export function AboutSection() {
+  const [isAboutExpanded, setIsAboutExpanded] = useState(false);
 
   return (
     <section id="about" className="py-20 px-6 xl:px-6 px-20">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center about-section-grid">
-          <div className="fade-in">
-            <div className="flex items-baseline mb-8 pr-6 xl:pr-0">
-              <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
-              <h2 className="text-2xl md:text-3xl font-bold text-dark-brown-alt about-heading">
-              About Me
-            </h2>
-              <div className="flex-1 h-px bg-sepia-alt ml-8 section-divider"></div>
-            </div>
-            <div className="space-y-6 text-dark-brown-alt leading-relaxed text-center xl:text-left pr-6 xl:pr-0">
-              <div className="flex items-start space-x-4">
-                <span className="text-2xl flex-shrink-0 mt-1">🎓</span>
-                <p>
-                  Hello! My name is Zoya, and I'm currently a student at 🔗<strong><a href="https://engr.ncsu.edu/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">North Carolina State University 🐾</a></strong> studying Computer Science and Cognitive Science.
-                </p>
-              </div>
-              <div className="flex items-start space-x-4">
-                <span className="text-2xl flex-shrink-0 mt-1">🎨</span>
-                <p>
-                  My interest in software development begins at the <strong className="text-sepia-alt">intersection of art and technology</strong>. I've grown up
-                  practicing fine art 🖌️ all my life, and I'm a strong believer in the power of good design to 
-                  communicate ideas effectively through any medium 💡.
-                </p>
-              </div>
-              <div className="flex items-start space-x-4">
-                <span className="text-2xl flex-shrink-0 mt-1">🌱</span>
-                <p>
-                  I love working the pipeline between design and engineering to create products that not only look great,
-                  but also perform well while prioritizing good user experiences.
-                  Products and systems should be <strong className="text-sepia-alt">optimized for the people that interact with them</strong> - not the other way around 🤝. 
+        <div className="flex items-baseline mb-8">
+          <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-dark-brown-alt about-heading">
+          About Me
+        </h2>
+          <div className="flex-1 h-px bg-sepia-alt ml-8 section-divider"></div>
+        </div>
+        
+        {/* About Me Content - Flex Layout for Desktop */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8">
+          {/* Text Content in White Box */}
+          <div className="bg-off-white backdrop-blur-sm rounded-lg p-4 xl:p-6 shadow-lg mb-8 lg:mb-0 lg:flex-1">
+          {/* First Paragraph - Always Visible */}
+          <div className="space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base">
+            <div className="flex items-start space-x-4">
+              <span className="text-2xl flex-shrink-0 mt-1">🎓</span>
+              <p>
+                Hello! My name is Zoya, and I'm currently a student at 🔗<strong><a href="https://engr.ncsu.edu/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">North Carolina State University 🐾</a></strong> studying Computer Science and Cognitive Science.
               </p>
             </div>
-              <div className="flex items-start space-x-4">
-                <span className="text-2xl flex-shrink-0 mt-1">💬</span>
-                <p>
-                  Ask me about: human factors, animating SVGs, <strong className="text-sepia-alt">how usability affect *everything* (not just tech)</strong>, the concept art of the Spider-Verse movies, or
-                  the best kinds of cultural experiences while visiting any new place :)
-                </p>
-              </div>
+            
+            {/* See More Button - Mobile only, after first paragraph */}
+            <div className={`md:hidden text-center ${isAboutExpanded ? 'hidden' : 'block'}`}>
+              <button 
+                onClick={() => setIsAboutExpanded(true)}
+                className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
+              >
+                See more...
+              </button>
             </div>
           </div>
-          <div className="fade-in">
-            <div className="flex justify-center pr-6 xl:pr-0">
-              {/* Main profile image */}
-              <div>
-                <div className="profile-image-container">
-                  <div className="profile-image-main">
-                    <img 
-                      src="/assets/IMG-0237.jpg" 
-                      alt="Profile picture" 
-                      className="profile-image"
-                    />
-                  </div>
-                  <div className="profile-image-border-shadow"></div>
-                  <div className="profile-image-background"></div>
-                </div>
+          
+          {/* Second Paragraph and Beyond - Hidden on mobile unless expanded, visible on desktop */}
+          <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden md:block'} mt-6`}>
+            <div className="flex items-start space-x-4">
+              <span className="text-2xl flex-shrink-0 mt-1">🎨</span>
+              <p>
+                My interest in software development begins at the <strong className="text-sepia-alt">intersection of art and technology</strong>. I've grown up
+                practicing fine art 🖌️ all my life, and I'm a strong believer in the power of good design to 
+                communicate ideas effectively through any medium 💡.
+              </p>
+            </div>
+            
+            {/* See More Button - Visible on screens 800px and above, after second paragraph */}
+            <div className={`hidden md:block text-center ${isAboutExpanded ? 'hidden' : 'block'}`}>
+              <button 
+                onClick={() => setIsAboutExpanded(true)}
+                className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
+              >
+                See more...
+              </button>
+            </div>
+          </div>
+          
+          {/* Expanded Content - Hidden unless expanded */}
+          <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden'}`}>
+            <div className="flex items-start space-x-4">
+              <span className="text-2xl flex-shrink-0 mt-1">🌱</span>
+              <p>
+                I love working the pipeline between design and engineering to create products that not only look great,
+                but also perform well while prioritizing good user experiences.
+                Products and systems should be <strong className="text-sepia-alt">optimized for the people that interact with them</strong> - not the other way around 🤝. 
+              </p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <span className="text-2xl flex-shrink-0 mt-1">💬</span>
+              <p>
+                Ask me about: human factors, animating SVGs, <strong className="text-sepia-alt">how usability affect *everything* (not just tech)</strong>, the concept art of the Spider-Verse movies, or
+                the best kinds of cultural experiences while visiting any new place :)
+              </p>
+            </div>
+            
+            {/* See Less Button - Appears at bottom when expanded */}
+            <div className="text-center">
+              <button 
+                onClick={() => setIsAboutExpanded(false)}
+                className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
+              >
+                See less
+              </button>
+            </div>
+          </div>
+          </div>
+          
+          {/* Profile Image - Below Text on Mobile, Right Side on Desktop */}
+          <div className="flex justify-center lg:justify-start lg:flex-shrink-0 hidden sm:flex">
+            <div className="profile-image-container scale-75 lg:scale-100">
+              <div className="profile-image-main">
+                <img 
+                  src="/assets/IMG-0237.jpg" 
+                  alt="Profile picture" 
+                  className="profile-image"
+                />
               </div>
+              <div className="profile-image-border-shadow"></div>
+              <div className="profile-image-background"></div>
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   );
@@ -139,7 +180,7 @@ export function ProjectsSection() {
           <div className="flex-1 h-px bg-sepia-alt ml-8 section-divider"></div>
         </div>
         <div className="bg-off-white backdrop-blur-sm rounded-lg p-6 mb-12 shadow-lg">
-          <p className="text-dark-brown-alt leading-relaxed text-center xl:text-left">
+          <p className="text-dark-brown-alt leading-relaxed text-center xl:text-left text-sm md:text-base">
             In my spare time, I'm usually drawing something from the depths of my camera roll 📸, recipe experimenting 👩‍🍳, or
             trying to mess around with a Notion template 📄. <br /> <br /> Some of my favorite types of projects are concept projects where I redesign 
             existing products and putting a spin on the user experience, and ultimately just building things that look cool 🎨🪄
@@ -150,7 +191,7 @@ export function ProjectsSection() {
         <div className="flex justify-center space-x-4 mb-12">
           <button 
             onClick={() => setActiveTab('coding')}
-            className={`px-6 py-3 rounded-lg font-medium transition-colors font-mono cursor-pointer ${
+            className={`px-6 py-3 rounded-lg font-medium transition-colors font-mono cursor-pointer text-sm md:text-base ${
               activeTab === 'coding' 
                 ? 'bg-sepia-alt text-white shadow-md' 
                 : 'border border-sepia-alt text-dark-brown-alt hover-bg-typing-highlight dark:hover:bg-sepia-alt/10'
@@ -160,7 +201,7 @@ export function ProjectsSection() {
           </button>
           <button 
             onClick={() => setActiveTab('artwork')}
-            className={`px-6 py-3 rounded-lg font-medium transition-colors font-mono cursor-pointer ${
+            className={`px-6 py-3 rounded-lg font-medium transition-colors font-mono cursor-pointer text-sm md:text-base ${
               activeTab === 'artwork' 
                 ? 'bg-sepia-alt text-white shadow-md' 
                 : 'border border-sepia-alt text-dark-brown-alt hover-bg-typing-highlight dark:hover:bg-sepia-alt/10'
@@ -181,10 +222,19 @@ export function ProjectsSection() {
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
                 <h3 className="text-2xl font-bold text-dark-brown-alt mb-4 text-center xl:text-left">
-                  Pearson UI Library 📦
+                  <a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-dark-brown-alt hover:text-sepia-alt transition-colors md:pointer-events-none">
+                    Pearson UI Library 📦
+                  </a>
                 </h3>
+                <div className="flex space-x-4 justify-center xl:justify-start mb-4 md:hidden">
+                  <a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                    </svg>
+                  </a>
+                </div>
                 <div className="bg-off-white backdrop-blur-sm rounded-lg p-6 mb-6 shadow-lg">
-                  <p className="text-dark-brown-alt leading-relaxed mb-4">
+                  <p className="text-dark-brown-alt leading-relaxed mb-4 text-sm md:text-base">
                     At 🔗<strong><a href="https://www.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">Pearson</a></strong>, 
                     I worked on the development of a <strong>global, reusable UI component library</strong> 🔖 supporting a company-wide rebrand 🤝. 
                   </p>
@@ -213,7 +263,7 @@ export function ProjectsSection() {
                     Figma
                   </span>
                 </div>
-                <div className="flex space-x-6 justify-center xl:justify-start">
+                <div className="hidden md:flex space-x-6 justify-center xl:justify-start">
                   <a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -221,7 +271,7 @@ export function ProjectsSection() {
                   </a>
                 </div>
               </div>
-              <div className="xl:col-span-7 xl:order-2 order-2">
+              <div className="xl:col-span-7 xl:order-2 order-2 hidden md:block">
                 <a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -243,7 +293,7 @@ export function ProjectsSection() {
           {/* Featured Project 2 - Travel Tracker */}
           <div className="fade-in">
             <div className="grid xl:grid-cols-12 gap-8 items-center">
-              <div className="xl:col-span-7 xl:order-1 order-2">
+              <div className="xl:col-span-7 xl:order-1 order-2 hidden md:block">
                 <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -264,10 +314,24 @@ export function ProjectsSection() {
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
                 <h3 className="text-2xl font-bold text-dark-brown-alt mb-4 text-center xl:text-left">
-                  "Been" ✈️ Travel Tracker
+                  <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-dark-brown-alt hover:text-sepia-alt transition-colors md:pointer-events-none">
+                    "Been" ✈️ Travel Tracker
+                  </a>
                 </h3>
+                <div className="flex space-x-4 justify-center xl:justify-start mb-4 md:hidden">
+                  <a href="https://github.com/zoyab522/been_app_exchange" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                  <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                    </svg>
+                  </a>
+                </div>
                 <div className="bg-off-white backdrop-blur-sm rounded-lg p-6 mb-6 shadow-lg">
-                  <p className="text-dark-brown-alt leading-relaxed mb-4">
+                  <p className="text-dark-brown-alt leading-relaxed mb-4 text-sm md:text-base">
                    A <strong>comprehensive travel tracker</strong> resembling the mobile app "Been".
                    Highlight countries on a map 🗺️, track % of the world explored 📈, and view a timeline 📅 of your travels.
                   </p>
@@ -294,7 +358,7 @@ export function ProjectsSection() {
                     Zustand
                   </span>
                 </div>
-                <div className="flex space-x-6 justify-center xl:justify-end">
+                <div className="hidden md:flex space-x-6 justify-center xl:justify-end">
                   <a href="https://github.com/zoyab522/been_app_exchange" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -313,7 +377,7 @@ export function ProjectsSection() {
           {/* Featured Project 3 - AI Agent */}
           <div className="fade-in">
             <div className="grid xl:grid-cols-12 gap-8 items-center">
-              <div className="xl:col-span-7 xl:order-2 order-2">
+              <div className="xl:col-span-7 xl:order-2 order-2 hidden md:block">
                 <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -334,10 +398,19 @@ export function ProjectsSection() {
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
                 <h3 className="text-2xl font-bold text-dark-brown-alt mb-4 text-center xl:text-left">
-                  AI Agent - Chip's Challenge 🤖
+                  <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="text-dark-brown-alt hover:text-sepia-alt transition-colors md:pointer-events-none">
+                    AI Agent - Chip's Challenge 🤖
+                  </a>
                 </h3>
+                <div className="flex space-x-4 justify-center xl:justify-start mb-4 md:hidden">
+                  <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
                 <div className="bg-off-white backdrop-blur-sm rounded-lg p-6 mb-6 shadow-lg">
-                  <p className="text-dark-brown-alt leading-relaxed mb-4">
+                  <p className="text-dark-brown-alt leading-relaxed mb-4 text-sm md:text-base">
                     Built AI agent to complete levels of increasing difficulty 📈🕹️ of the popular game 🔗<strong><a href="https://store.steampowered.com/app/346850/Chips_Challenge_1/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">Chip's Challenge</a></strong> using a priority queue-based AI planning algorithm. 
                   </p>
                   <ul className="text-dark-brown-alt text-sm space-y-1">
@@ -360,7 +433,7 @@ export function ProjectsSection() {
                     Dynamic Goal Priority
                   </span>
                 </div>
-                <div className="flex space-x-6 justify-center xl:justify-start">
+                <div className="hidden md:flex space-x-6 justify-center xl:justify-start">
                   <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -440,7 +513,7 @@ export function ProjectsSection() {
                 <h4 className="text-xl font-bold text-dark-brown-alt mb-3">
                   Pokédex ⚡
                 </h4>
-                <p className="text-dark-brown-alt mb-4 leading-relaxed">
+                <p className="text-dark-brown-alt mb-4 leading-relaxed text-sm md:text-base">
                   A modern React implementation of a Pokédex to search and explore Pokémon 🔍. 
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
@@ -482,7 +555,7 @@ export function ProjectsSection() {
                 <h4 className="text-xl font-bold text-dark-brown-alt mb-3">
                   ML - Predicting Robotics Match Winners 🎮
                 </h4>
-                <p className="text-dark-brown-alt mb-4 leading-relaxed">
+                <p className="text-dark-brown-alt mb-4 leading-relaxed text-sm md:text-base">
                   Pair-programmed and trained a neural network to predict the outcome of robotics matches 🤖, optimizing accuracy in prediction 📊.
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
@@ -519,7 +592,7 @@ export function ProjectsSection() {
                 <h4 className="text-xl font-bold text-dark-brown-alt mb-3">
                   Blender - Photorealistic Donut Model 🍩
                 </h4>
-                <p className="text-dark-brown-alt mb-4 leading-relaxed">
+                <p className="text-dark-brown-alt mb-4 leading-relaxed text-sm md:text-base">
                   A photorealistic 3D donut model created in Blender following the famous donut tutorial 📹. 
                 </p>
                 <ul className="text-dark-brown-alt text-sm space-y-1 mb-4">
@@ -561,7 +634,7 @@ export function ProjectsSection() {
                 <h4 className="text-xl font-bold text-dark-brown-alt mb-3">
                   Personal Website 🪄
                 </h4>
-                <p className="text-dark-brown-alt mb-4 leading-relaxed">
+                <p className="text-dark-brown-alt mb-4 leading-relaxed text-sm md:text-base">
                   You're looking at it :) 💼. <br /> <br /> Loosely designed on my iPad and in Adobe XD, and built by yours truly✨.
                 </p>
                 
@@ -615,7 +688,7 @@ export function ContactSection() {
         </p>
         <a 
           href="mailto:zoyaba52@gmail.com" 
-          className="inline-flex items-center px-8 py-3 border border-sepia-alt text-dark-brown-alt hover-bg-typing-highlight dark:hover:bg-sepia-alt/10 rounded-lg transition-colors font-medium font-mono space-x-2 mb-20"
+          className="inline-flex items-center px-8 py-3 border border-sepia-alt text-dark-brown-alt hover-bg-typing-highlight dark:hover:bg-sepia-alt/10 rounded-lg transition-colors font-medium font-mono space-x-2 mb-20 text-sm md:text-base"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>

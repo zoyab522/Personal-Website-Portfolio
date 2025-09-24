@@ -57,15 +57,15 @@ export default function Home() {
                 alt="Zoya" 
                 className="w-10 h-10 rounded-full object-cover object-center border-2 border-[#5D2E0A] -mt-1 ml-4 xl:ml-0"
               />
-              <span className="text-xl text-sepia-alt font-mono">Zoya</span>
+              <span className="text-xl text-sepia-alt font-mono hidden sm:block">Zoya</span>
             </a>
-            <div className="nav-desktop hidden md:flex space-x-8">
+            <div className="nav-desktop space-x-8">
               <SmoothScrollLink href="#about" className="text-gray-600 hover-text-sepia transition-colors font-mono">About</SmoothScrollLink>
               <SmoothScrollLink href="#projects" className="text-gray-600 hover-text-sepia transition-colors font-mono">Projects</SmoothScrollLink>
               <a href="/artwork" className="text-gray-600 hover-text-sepia transition-colors font-mono">Artwork</a>
               <SmoothScrollLink href="#contact" className="text-gray-600 hover-text-sepia transition-colors font-mono">Contact</SmoothScrollLink>
             </div>
-            <div className="nav-mobile flex items-center space-x-4 pr-12 md:pr-0">
+            <div className="nav-mobile items-center space-x-4 pr-12 md:pr-0">
               <ThemeToggle />
               <button 
                 className="md:hidden text-dark-brown"
@@ -81,7 +81,7 @@ export default function Home() {
         
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="nav-mobile md:hidden dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-6 py-4" style={{backgroundColor: '#fffef4'}}>
+          <div className="nav-mobile md:hidden bg-off-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-6 py-4">
             <div className="flex flex-col space-y-4 text-center">
               <a 
                 href="/#about" 

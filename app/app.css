@@ -225,6 +225,15 @@ body {
   }
 }
 
+/* Hide mobile nav by default, show desktop nav */
+.nav-mobile {
+  display: none !important;
+}
+
+.nav-desktop {
+  display: flex !important;
+}
+
 /* Custom breakpoint for 700px */
 @media (max-width: 699px) {
   .nav-desktop {
@@ -232,6 +241,16 @@ body {
   }
   .nav-mobile {
     display: flex !important;
+  }
+}
+
+/* Custom breakpoint for 500px - Center About Me section on mobile */
+@media (max-width: 499px) {
+  #about .max-w-6xl {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 8px !important;
   }
 }
 
