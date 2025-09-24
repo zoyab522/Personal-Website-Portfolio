@@ -344,12 +344,171 @@ body {
   }
 }
 
+/* Scroll-triggered animations */
+@scroll-timeline fade-in-timeline {
+  source: auto;
+  orientation: vertical;
+  scroll-offsets: 0%, 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scroll animation classes */
+.scroll-fade-in {
+  animation: fade-in 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 50%;
+}
+
+.scroll-slide-left {
+  animation: slide-in-left 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 50%;
+}
+
+.scroll-slide-right {
+  animation: slide-in-right 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 50%;
+}
+
+/* Additional spacing for larger screens only */
+@media (min-width: 768px) {
+  #about {
+    margin-bottom: 4rem !important;
+  }
+  
+  #projects {
+    margin-bottom: 3rem !important;
+  }
+}
+
+/* Desktop-only spacing between headings and descriptions */
+@media (min-width: 1024px) {
+  #projects .bg-off-white {
+    margin-top: 3rem !important;
+  }
+  
+  #about .scroll-fade-in {
+    margin-top: 0 !important;
+  }
+}
+
 /* Profile image border styles */
 .profile-image-container {
   position: relative;
   margin-top: 2rem;
   transition: transform 0.1s ease-out;
 }
+
+@media (max-width: 1023px) {
+  .profile-image-container {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Medium screens - make profile image bigger */
+@media (min-width: 700px) and (max-width: 900px) {
+  .profile-image-container {
+    transform: scale(1.2) !important;
+  }
+}
+
+/* Keep profile image consistent size on screens below 1025px */
+@media (max-width: 1024px) {
+  .profile-image-container {
+    transform: scale(1.45) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-image-container {
+    transform: scale(1.25) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile-image-container {
+    transform: scale(1.1) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .profile-image-container {
+    transform: scale(.9) !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .profile-image-container {
+    transform: scale(.7) !important;
+  }
+}
+
+/* Hide sidebar icons on screens below 1275px */
+@media (max-width: 1284px) {
+  .fixed.left-0.bottom-0 {
+    display: none !important;
+  }
+  
+  .fixed.right-0.bottom-0 {
+    display: none !important;
+  }
+}
+
+/* Stack artwork grid on screens below 850px */
+@media (max-width: 849px) {
+  .grid.grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Stack featured projects grid on screens below 850px */
+@media (max-width: 849px) {
+  .grid.grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Reduce left and right padding on screens above 850px */
+@media (min-width: 950px) {
+  section {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+
 
 .profile-image-main {
   width: 24rem;

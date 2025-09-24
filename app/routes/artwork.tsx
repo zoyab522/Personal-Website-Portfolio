@@ -80,7 +80,7 @@ export default function Artwork() {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity pl-12 xl:pl-0">
               <img 
-                src="/assets/IMG-0237.jpg" 
+                src="/assets/IMG-4148.JPG" 
                 alt="Zoya" 
                 className="w-10 h-10 rounded-full object-cover object-center border-2 border-[#5D2E0A] -mt-1 ml-4 xl:ml-0"
               />
@@ -122,7 +122,7 @@ export default function Artwork() {
       </nav>
 
       {/* Artwork Section */}
-      <section className="py-20 px-4 xl:px-6 px-20 pt-32">
+      <section className="px-4 xl:px-6 pt-32">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-baseline mb-8">
             <span className="text-lg font-mono text-sepia-alt mr-4">#02.</span>

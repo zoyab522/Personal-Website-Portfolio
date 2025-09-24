@@ -53,7 +53,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity pl-12 xl:pl-0">
               <img 
-                src="/assets/IMG-0237.jpg" 
+                src="/assets/IMG-4148.JPG" 
                 alt="Zoya" 
                 className="w-10 h-10 rounded-full object-cover object-center border-2 border-[#5D2E0A] -mt-1 ml-4 xl:ml-0"
               />
