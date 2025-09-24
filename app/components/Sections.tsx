@@ -48,7 +48,7 @@ export function AboutSection() {
   const [isAboutExpanded, setIsAboutExpanded] = useState(false);
 
   return (
-    <section id="about" className="py-20 px-4 xl:px-6 px-20">
+    <section id="about" className="px-4 xl:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-baseline mb-8">
           <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
@@ -171,7 +171,7 @@ export function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="py-20 px-4 xl:px-6 px-20">
+    <section id="projects" className="py-20 px-4 xl:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-baseline mb-8">
           <span className="text-lg font-mono text-sepia-alt mr-4">#01.</span>

@@ -95,7 +95,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 xl:px-6 px-20 pt-20">
+      <section className="min-h-screen flex items-center justify-center px-4 md:px-20 xl:px-6 pt-8 md:pt-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-dark-brown mb-6">
