@@ -217,8 +217,8 @@ export function ProjectsSection() {
         <div className="space-y-32">
           {/* Featured Project 1 - Pearson Education */}
           <div className="scroll-slide-left">
-            <div className="grid xl:grid-cols-12 gap-8 items-center">
-              <div className="xl:col-span-5 xl:order-1 order-1 text-left">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="order-1 text-left">
                 <div className="flex items-center justify-center xl:justify-start space-x-2 mb-4">
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
@@ -278,7 +278,7 @@ export function ProjectsSection() {
                   </a>
                 </div>
               </div>
-              <div className="xl:col-span-7 xl:order-2 order-2 hidden md:block">
+              <div className="order-2 hidden md:block">
                 <a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -299,8 +299,8 @@ export function ProjectsSection() {
 
           {/* Featured Project 2 - Travel Tracker */}
           <div className="scroll-slide-right">
-            <div className="grid xl:grid-cols-12 gap-8 items-center">
-              <div className="xl:col-span-7 xl:order-1 order-2 hidden md:block">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 hidden md:block">
                 <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -316,7 +316,7 @@ export function ProjectsSection() {
                 </div>
                 </a>
               </div>
-              <div className="xl:col-span-5 xl:order-2 order-1 text-left xl:text-right">
+              <div className="order-1 text-left lg:text-right">
                 <div className="flex items-center justify-center xl:justify-end space-x-2 mb-4">
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
@@ -386,8 +386,8 @@ export function ProjectsSection() {
 
           {/* Featured Project 3 - AI Agent */}
           <div className="scroll-slide-left">
-            <div className="grid xl:grid-cols-12 gap-8 items-center">
-              <div className="xl:col-span-7 xl:order-2 order-2 hidden md:block">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 hidden md:block">
                 <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -403,7 +403,7 @@ export function ProjectsSection() {
                 </div>
                 </a>
               </div>
-              <div className="xl:col-span-5 xl:order-1 order-1 text-left">
+              <div className="order-1 text-left">
                 <div className="flex items-center justify-center xl:justify-start space-x-2 mb-4">
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
