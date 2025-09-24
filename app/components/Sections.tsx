@@ -48,7 +48,7 @@ export function AboutSection() {
   const [isAboutExpanded, setIsAboutExpanded] = useState(false);
 
   return (
-    <section id="about" className="py-20 px-6 xl:px-6 px-20">
+    <section id="about" className="py-20 px-4 xl:px-6 px-20">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-baseline mb-8">
           <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
@@ -61,7 +61,7 @@ export function AboutSection() {
         {/* About Me Content - Flex Layout for Desktop */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8">
           {/* Text Content in White Box */}
-          <div className="bg-off-white backdrop-blur-sm rounded-lg p-4 xl:p-6 shadow-lg mb-8 lg:mb-0 lg:flex-1">
+          <div className="bg-off-white backdrop-blur-sm rounded-lg p-4 xl:p-6 shadow-lg mb-8 lg:mb-0 lg:flex-1 lg:mt-8">
           {/* First Paragraph - Always Visible */}
           <div className="space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base">
             <div className="flex items-start space-x-4">
@@ -135,7 +135,7 @@ export function AboutSection() {
           </div>
           
           {/* Profile Image - Below Text on Mobile, Right Side on Desktop */}
-          <div className="flex justify-center lg:justify-start lg:flex-shrink-0 hidden sm:flex">
+          <div className="flex justify-center lg:justify-start lg:flex-shrink-0 lg:items-center hidden sm:flex">
             <div className="profile-image-container scale-75 lg:scale-100">
               <div className="profile-image-main">
                 <img 
@@ -170,7 +170,7 @@ export function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="py-20 px-6 xl:px-6 px-20">
+    <section id="projects" className="py-20 px-4 xl:px-6 px-20">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-baseline mb-8">
           <span className="text-lg font-mono text-sepia-alt mr-4">#01.</span>
@@ -238,9 +238,8 @@ export function ProjectsSection() {
                     At 🔗<strong><a href="https://www.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">Pearson</a></strong>, 
                     I worked on the development of a <strong>global, reusable UI component library</strong> 🔖 supporting a company-wide rebrand 🤝. 
                   </p>
-                    <ul className="text-dark-brown-alt text-sm space-y-1">
+                    <ul className="text-dark-brown-alt text-sm space-y-1 break-words">
                       <li>• <strong>Figma to code</strong> translation for components</li>
-                      <li>• <strong>Deployment</strong> at 🔗<strong><a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">storybook.pearson.com</a></strong></li>
                       <li>• <strong>Reusable across all products</strong> with visibility up to CTO</li>
                       <li>• <strong>Saves 300+ hours</strong> across development teams</li>
                     </ul>
@@ -664,7 +663,7 @@ export function ProjectsSection() {
 
 export function DotsSection() {
   return (
-    <section className="pt-32 pb-32 px-6 xl:px-6 px-20">
+    <section className="pt-32 pb-32 px-4 xl:px-6 px-20">
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex justify-center items-center space-y-3 flex-col">
           <div className="w-2 h-2 border-2 border-sepia-alt rounded-full"></div>
@@ -678,7 +677,7 @@ export function DotsSection() {
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 px-6 xl:px-6 px-20">
+    <section id="contact" className="py-20 px-4 xl:px-6 px-20">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-brown-alt  mb-6">
           Get In Touch
@@ -724,7 +723,7 @@ export function ContactSection() {
 
 export function Footer() {
   return (
-    <footer className="pb-20 px-6 xl:px-6 px-20">
+    <footer className="pb-20 px-4 xl:px-6 px-20">
       <div className="max-w-6xl mx-auto text-center">
           <p className="text-dark-brown-alt font-mono">
             Drawn loosely on my iPad and designed in Adobe XD, and built by yours truly✨.

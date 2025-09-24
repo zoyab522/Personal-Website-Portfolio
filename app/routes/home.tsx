@@ -83,43 +83,19 @@ export default function Home() {
         
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="nav-mobile md:hidden bg-off-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-6 py-4">
-            <div className="flex flex-col space-y-4 text-center">
-              <a 
-                href="/#about" 
-                className="text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono block w-full text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </a>
-              <a 
-                href="/#projects" 
-                className="text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono block w-full text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Projects
-              </a>
-              <a 
-                href="/artwork" 
-                className="text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono block w-full text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Artwork
-              </a>
-              <a 
-                href="/#contact" 
-                className="text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono block w-full text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </a>
+          <div className="md:hidden bg-off-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-6">
+            <div className="text-center">
+              <a href="/#about" className="block py-3 text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono" onClick={() => setIsMobileMenuOpen(false)}>About</a>
+              <a href="/#projects" className="block py-3 text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono" onClick={() => setIsMobileMenuOpen(false)}>Projects</a>
+              <a href="/artwork" className="block py-3 text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono" onClick={() => setIsMobileMenuOpen(false)}>Artwork</a>
+              <a href="/#contact" className="block py-3 text-sepia dark:text-gray-300 hover:text-sepia-dark transition-colors font-mono" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
             </div>
           </div>
         )}
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 xl:px-6 px-20 pt-20">
+      <section className="min-h-screen flex items-center justify-center px-4 xl:px-6 px-20 pt-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-dark-brown mb-6">

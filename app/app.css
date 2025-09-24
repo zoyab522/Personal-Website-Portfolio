@@ -244,6 +244,7 @@ body {
   }
 }
 
+
 /* Custom breakpoint for 500px - Center About Me section on mobile */
 @media (max-width: 499px) {
   #about .max-w-6xl {
@@ -258,9 +259,6 @@ body {
 @media (max-width: 767px) {
   .nav-bg a:first-child img {
     margin-left: 16px !important;
-  }
-  .nav-bg > div > div:last-child {
-    padding-right: 48px !important;
   }
 }
 
