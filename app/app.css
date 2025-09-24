@@ -494,21 +494,6 @@ body {
   }
 }
 
-/* Stack featured projects grid on screens below 850px */
-@media (max-width: 849px) {
-  .grid.grid-cols-2 {
-    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-  }
-}
-
-/* Reduce left and right padding on screens above 850px */
-@media (min-width: 950px) {
-  section {
-    padding-left: 60px !important;
-    padding-right: 60px !important;
-  }
-}
-
 
 .profile-image-main {
   width: 24rem;
@@ -516,6 +501,14 @@ body {
   border-radius: 0.5rem;
   border: 2px solid #2512048c;
   padding: 0.5rem;
+}
+
+/* Reduce left and right padding on screens above 850px */
+@media (min-width: 850px) {
+  section {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
 }
 
 .profile-image-background {

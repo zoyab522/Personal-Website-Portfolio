@@ -50,13 +50,13 @@ export function AboutSection() {
   return (
     <section id="about" className="px-4 xl:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-baseline mb-8">
-          <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-dark-brown-alt about-heading">
-          About Me
-        </h2>
-          <div className="flex-1 h-px bg-sepia-alt ml-8 section-divider"></div>
-        </div>
+            <div className="flex items-baseline mb-8">
+              <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
+              <h2 className="text-2xl md:text-3xl font-bold text-dark-brown-alt about-heading">
+              About Me
+            </h2>
+              <div className="flex-1 h-px bg-sepia-alt ml-8 section-divider"></div>
+            </div>
         
         {/* About Me Content - Flex Layout for Desktop */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 scroll-fade-in">
@@ -64,12 +64,12 @@ export function AboutSection() {
           <div className="bg-off-white backdrop-blur-sm rounded-lg p-4 xl:p-6 shadow-lg mb-8 lg:mb-0 lg:flex-1 lg:mt-8">
           {/* First Paragraph - Always Visible */}
           <div className="space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base">
-            <div className="flex items-start space-x-4">
-              <span className="text-2xl flex-shrink-0 mt-1">🎓</span>
-              <p>
-                Hello! My name is Zoya, and I'm currently a student at 🔗<strong><a href="https://engr.ncsu.edu/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">North Carolina State University 🐾</a></strong> studying Computer Science and Cognitive Science.
-              </p>
-            </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-2xl flex-shrink-0 mt-1">🎓</span>
+                <p>
+                  Hello! My name is Zoya, and I'm currently a student at 🔗<strong><a href="https://engr.ncsu.edu/" target="_blank" rel="noopener noreferrer" className="text-sepia-alt hover:text-sepia-dark transition-colors">North Carolina State University 🐾</a></strong> studying Computer Science and Cognitive Science.
+                </p>
+              </div>
             
             {/* See More Button - Mobile only, after first paragraph */}
             <div className={`text-center lg:hidden ${isAboutExpanded ? '!hidden' : ''}`}>
@@ -84,14 +84,14 @@ export function AboutSection() {
           
           {/* Second Paragraph and Beyond - Hidden on mobile unless expanded, visible on desktop */}
           <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden lg:block'} mt-6`}>
-            <div className="flex items-start space-x-4">
-              <span className="text-2xl flex-shrink-0 mt-1">🎨</span>
-              <p>
-                My interest in software development begins at the <strong className="text-sepia-alt">intersection of art and technology</strong>. I've grown up
-                practicing fine art 🖌️ all my life, and I'm a strong believer in the power of good design to 
-                communicate ideas effectively through any medium 💡.
-              </p>
-            </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-2xl flex-shrink-0 mt-1">🎨</span>
+                <p>
+                  My interest in software development begins at the <strong className="text-sepia-alt">intersection of art and technology</strong>. I've grown up
+                  practicing fine art 🖌️ all my life, and I'm a strong believer in the power of good design to 
+                  communicate ideas effectively through any medium 💡.
+                </p>
+              </div>
             
             {/* See More Button - Visible on screens 800px-949px, after second paragraph */}
             <div className={`text-center hidden md:block lg:hidden ${isAboutExpanded ? '!hidden' : ''}`}>
@@ -106,21 +106,21 @@ export function AboutSection() {
           
           {/* Expanded Content - Hidden unless expanded or on screens 950px+ */}
           <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden lg:block'}`}>
-            <div className="flex items-start space-x-4">
-              <span className="text-2xl flex-shrink-0 mt-1">🌱</span>
-              <p>
-                I love working the pipeline between design and engineering to create products that not only look great,
-                but also perform well while prioritizing good user experiences.
-                Products and systems should be <strong className="text-sepia-alt">optimized for the people that interact with them</strong> - not the other way around 🤝. 
+              <div className="flex items-start space-x-4">
+                <span className="text-2xl flex-shrink-0 mt-1">🌱</span>
+                <p>
+                  I love working the pipeline between design and engineering to create products that not only look great,
+                  but also perform well while prioritizing good user experiences.
+                  Products and systems should be <strong className="text-sepia-alt">optimized for the people that interact with them</strong> - not the other way around 🤝. 
               </p>
             </div>
-            <div className="flex items-start space-x-4">
-              <span className="text-2xl flex-shrink-0 mt-1">💬</span>
-              <p>
-                Ask me about: human factors, animating SVGs, <strong className="text-sepia-alt">how usability affect *everything* (not just tech)</strong>, the concept art of the Spider-Verse movies, or
-                the best kinds of cultural experiences while visiting any new place :)
-              </p>
-            </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-2xl flex-shrink-0 mt-1">💬</span>
+                <p>
+                  Ask me about: human factors, animating SVGs, <strong className="text-sepia-alt">how usability affect *everything* (not just tech)</strong>, the concept art of the Spider-Verse movies, or
+                  the best kinds of cultural experiences while visiting any new place :)
+                </p>
+              </div>
             
             {/* See Less Button - Appears at bottom when expanded, hidden on screens 950px+ */}
             <div className="text-center lg:hidden">
@@ -137,18 +137,18 @@ export function AboutSection() {
           {/* Profile Image - Below Text on Mobile, Right Side on Desktop */}
           <div className="flex justify-center lg:justify-start lg:flex-shrink-0 lg:items-center py-2 lg:py-0">
             <div className="profile-image-container scale-75 lg:scale-100">
-              <div className="profile-image-main">
-                <img 
-                  src="/assets/IMG-0237.jpg" 
-                  alt="Profile picture" 
-                  className="profile-image"
-                />
+                  <div className="profile-image-main">
+                    <img 
+                      src="/assets/IMG-0237.jpg" 
+                      alt="Profile picture" 
+                      className="profile-image"
+                    />
+                  </div>
+                  <div className="profile-image-border-shadow"></div>
+                  <div className="profile-image-background"></div>
+                </div>
               </div>
-              <div className="profile-image-border-shadow"></div>
-              <div className="profile-image-background"></div>
             </div>
-          </div>
-        </div>
         
       </div>
     </section>
@@ -217,14 +217,14 @@ export function ProjectsSection() {
         <div className="space-y-32">
           {/* Featured Project 1 - Pearson Education */}
           <div className="scroll-slide-left">
-            <div className="grid grid-cols-2 gap-8 items-center">
-              <div className="xl:order-1 order-1 text-left">
+            <div className="grid xl:grid-cols-12 gap-8 items-center">
+              <div className="xl:col-span-5 xl:order-1 order-1 text-left">
                 <div className="flex items-center justify-center xl:justify-start space-x-2 mb-4">
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
                 <h3 className="text-2xl font-bold text-dark-brown-alt mb-4 text-center xl:text-left">
                   <a href="https://storybook.pearson.com/" target="_blank" rel="noopener noreferrer" className="text-dark-brown-alt hover:text-sepia-alt transition-colors md:pointer-events-none">
-                    Pearson UI Library 📦
+                  Pearson UI Library 📦
                   </a>
                 </h3>
                 <div className="flex space-x-4 justify-center xl:justify-start mb-4 md:hidden">
@@ -299,8 +299,8 @@ export function ProjectsSection() {
 
           {/* Featured Project 2 - Travel Tracker */}
           <div className="scroll-slide-right">
-            <div className="grid grid-cols-2 gap-8 items-center">
-              <div className="xl:order-1 order-2 hidden md:block">
+            <div className="grid xl:grid-cols-12 gap-8 items-center">
+              <div className="xl:col-span-7 xl:order-1 order-2 hidden md:block">
                 <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -322,7 +322,7 @@ export function ProjectsSection() {
                 </div>
                 <h3 className="text-2xl font-bold text-dark-brown-alt mb-4 text-center xl:text-right">
                   <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-dark-brown-alt hover:text-sepia-alt transition-colors md:pointer-events-none">
-                    "Been" ✈️ Travel Tracker
+                  "Been" ✈️ Travel Tracker
                   </a>
                 </h3>
                 <div className="flex space-x-4 justify-center xl:justify-start mb-4 md:hidden">
@@ -386,8 +386,8 @@ export function ProjectsSection() {
 
           {/* Featured Project 3 - AI Agent */}
           <div className="scroll-slide-left">
-            <div className="grid grid-cols-2 gap-8 items-center">
-              <div className="xl:order-2 order-2 hidden md:block">
+            <div className="grid xl:grid-cols-12 gap-8 items-center">
+              <div className="xl:col-span-7 xl:order-2 order-2 hidden md:block">
                 <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -409,7 +409,7 @@ export function ProjectsSection() {
                 </div>
                 <h3 className="text-2xl font-bold text-dark-brown-alt mb-4 text-center xl:text-left">
                   <a href="https://github.com/zoyab522/411-PS6/blob/main/CSC411_ProblemSet06/src/edu/ncsu/csc411/ps06/agent/Robot.java" target="_blank" rel="noopener noreferrer" className="text-dark-brown-alt hover:text-sepia-alt transition-colors md:pointer-events-none">
-                    AI Agent - Chip's Challenge 🤖
+                  AI Agent - Chip's Challenge 🤖
                   </a>
                 </h3>
                 <div className="flex space-x-4 justify-center xl:justify-start mb-4 md:hidden">
