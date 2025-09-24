@@ -609,6 +609,13 @@ body {
   opacity: 0;
 }
 
+/* Mobile: keep hover effect but also enable click for full screen */
+@media (max-width: 1023px) {
+  .blender-project:hover > div {
+    opacity: 0;
+  }
+}
+
 /* Masonry-style artwork grid */
 .artwork-masonry {
   columns: 4;

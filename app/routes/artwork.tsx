@@ -1,4 +1,4 @@
-import { SocialSidebar } from "../components/Sections";
+import { SocialSidebar, Footer } from "../components/Sections";
 import { SmoothScrollLink } from "../components/ScrollAnimations";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { useState } from "react";
@@ -200,6 +200,7 @@ export default function Artwork() {
         </div>
       </section>
 
+      <Footer />
       <SocialSidebar />
     </div>
   );
