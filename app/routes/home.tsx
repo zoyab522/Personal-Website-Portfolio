@@ -95,19 +95,19 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 md:px-20 xl:px-6 pt-8 md:pt-20">
+      <section className="min-h-screen flex items-center justify-center px-4 md:px-20 xl:px-6 pt-24 md:pt-45">
         <div className="max-w-4xl mx-auto text-center">
           <div className="fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-dark-brown mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-dark-brown mb-12">
               Hi, I'm <span className="text-sepia">Zoya</span>
             </h1>
             <div className="text-2xl md:text-3xl text-dark-brown mb-8 min-h-[3rem]">
               <span className="typing-animation font-mono">{currentText}</span>
             </div>
-            <p className="text-lg md:text-xl text-dark-brown mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-dark-brown mb-20 max-w-2xl mx-auto leading-relaxed">
               I'm a software engineer fluidly moving through the tech stack, specializing in building beautiful user experiences. 
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-32">
               <SmoothScrollLink 
                 href="#projects" 
                 className="px-8 py-3 bg-sepia-alt text-white rounded-lg hover-bg-sepia-dark transition-colors font-medium font-mono w-full sm:w-auto"

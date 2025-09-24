@@ -50,7 +50,7 @@ export function AboutSection() {
   return (
     <section id="about" className="px-4 xl:px-6">
       <div className="max-w-6xl mx-auto">
-            <div className="flex items-baseline mb-8">
+            <div className="flex items-baseline mb-8 mt-2.5">
               <span className="text-lg font-mono text-sepia-alt mr-4">#00.</span>
               <h2 className="text-2xl md:text-3xl font-bold text-dark-brown-alt about-heading">
               About Me
@@ -173,7 +173,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="pt-8 pb-20 px-4 xl:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-baseline mb-8">
+        <div className="flex items-baseline mb-8 mt-2.5">
           <span className="text-lg font-mono text-sepia-alt mr-4">#01.</span>
           <h2 className="text-2xl md:text-3xl font-bold text-dark-brown-alt about-heading">
           Notable Work
@@ -300,7 +300,7 @@ export function ProjectsSection() {
           {/* Featured Project 2 - Travel Tracker */}
           <div className="scroll-slide-right">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 hidden md:block">
+              <div className="order-1 hidden md:block">
                 <a href="https://been-app-exchange-7szm.vercel.app/" target="_blank" rel="noopener noreferrer" className="block project-box-link">
                   <div className="project-container">
                   <div className="project-image-main w-full h-[345px]">
@@ -316,7 +316,7 @@ export function ProjectsSection() {
                 </div>
                 </a>
               </div>
-              <div className="order-1 text-left lg:text-right">
+              <div className="order-2 text-left lg:text-right">
                 <div className="flex items-center justify-center xl:justify-end space-x-2 mb-4">
                   <span className="text-sm font-mono text-sepia-alt">Featured Project</span>
                 </div>
@@ -742,7 +742,7 @@ export function ContactSection() {
         </p>
         <a 
           href="mailto:zoyaba52@gmail.com" 
-          className="inline-flex items-center px-8 py-3 border border-sepia-alt text-dark-brown-alt hover-bg-typing-highlight dark:hover:bg-sepia-alt/10 rounded-lg transition-colors font-medium font-mono space-x-2 mb-8 text-sm md:text-base"
+          className="inline-flex items-center px-8 py-3 border border-sepia-alt text-dark-brown-alt hover-bg-typing-highlight dark:hover:bg-sepia-alt/10 rounded-lg transition-colors font-medium font-mono space-x-2 mb-4 text-sm md:text-base"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -756,7 +756,7 @@ export function ContactSection() {
 
 export function Footer() {
   return (
-    <footer className="pb-20 px-4 xl:px-6 px-20">
+    <footer className="pt-20 pb-20 px-4 xl:px-6 px-20">
       <div className="max-w-6xl mx-auto text-center">
           <p className="text-dark-brown-alt font-mono mb-8">
             Drawn loosely on my iPad and designed in Adobe XD, and built by yours truly✨.

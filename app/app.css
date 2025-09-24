@@ -494,16 +494,17 @@ body {
   }
 }
 
-/* Stack featured projects on screens below 1000px */
-@media (max-width: 999px) {
+/* Stack featured projects on screens below 850px */
+@media (max-width: 849px) {
   .grid[class*="md:grid-cols-2"] {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
   
-  /* Show project images on mobile when stacked */
+  /* Hide project images when stacked */
   .grid[class*="md:grid-cols-2"] .hidden[class*="md:block"],
+  .grid[class*="md:grid-cols-2"] .order-1.hidden[class*="md:block"],
   .grid[class*="md:grid-cols-2"] .order-2.hidden[class*="md:block"] {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -524,11 +525,32 @@ body {
   padding: 0.5rem;
 }
 
-/* Reduce left and right padding on screens above 850px */
-@media (min-width: 850px) {
+/* Progressive padding reduction as screen gets smaller */
+@media (min-width: 1200px) {
   section {
-    padding-left: 90px !important;
-    padding-right: 90px !important;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  section {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 999px) {
+  section {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 899px) {
+  section {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
