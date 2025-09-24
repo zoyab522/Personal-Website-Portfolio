@@ -164,7 +164,7 @@ export default function Artwork() {
           </div>
 
           {/* Tab Navigation */}
-          <div className="flex justify-center space-x-4 mb-8">
+          <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mb-8">
             <button
               onClick={() => setActiveTab("digital")}
             className={`px-6 py-3 rounded-lg font-medium transition-colors font-mono cursor-pointer ${

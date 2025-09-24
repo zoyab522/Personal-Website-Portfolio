@@ -72,7 +72,7 @@ export function AboutSection() {
             </div>
             
             {/* See More Button - Mobile only, after first paragraph */}
-            <div className={`text-center md:hidden ${isAboutExpanded ? '!hidden' : ''}`}>
+            <div className={`text-center lg:hidden ${isAboutExpanded ? '!hidden' : ''}`}>
               <button 
                 onClick={() => setIsAboutExpanded(true)}
                 className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
@@ -83,7 +83,7 @@ export function AboutSection() {
           </div>
           
           {/* Second Paragraph and Beyond - Hidden on mobile unless expanded, visible on desktop */}
-          <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden md:block'} mt-6`}>
+          <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden lg:block'} mt-6`}>
             <div className="flex items-start space-x-4">
               <span className="text-2xl flex-shrink-0 mt-1">🎨</span>
               <p>
@@ -93,8 +93,8 @@ export function AboutSection() {
               </p>
             </div>
             
-            {/* See More Button - Visible on screens 800px and above, after second paragraph */}
-            <div className={`text-center hidden md:block ${isAboutExpanded ? '!hidden' : ''}`}>
+            {/* See More Button - Visible on screens 800px-949px, after second paragraph */}
+            <div className={`text-center hidden md:block lg:hidden ${isAboutExpanded ? '!hidden' : ''}`}>
               <button 
                 onClick={() => setIsAboutExpanded(true)}
                 className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"
@@ -104,8 +104,8 @@ export function AboutSection() {
             </div>
           </div>
           
-          {/* Expanded Content - Hidden unless expanded */}
-          <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden'}`}>
+          {/* Expanded Content - Hidden unless expanded or on screens 950px+ */}
+          <div className={`space-y-6 text-dark-brown-alt leading-relaxed text-left text-sm md:text-base transition-all duration-300 ${isAboutExpanded ? 'block' : 'hidden lg:block'}`}>
             <div className="flex items-start space-x-4">
               <span className="text-2xl flex-shrink-0 mt-1">🌱</span>
               <p>
@@ -122,8 +122,8 @@ export function AboutSection() {
               </p>
             </div>
             
-            {/* See Less Button - Appears at bottom when expanded */}
-            <div className="text-center">
+            {/* See Less Button - Appears at bottom when expanded, hidden on screens 950px+ */}
+            <div className="text-center lg:hidden">
               <button 
                 onClick={() => setIsAboutExpanded(false)}
                 className="text-sepia-alt hover:text-sepia-dark transition-colors font-mono text-sm"

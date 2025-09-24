@@ -134,13 +134,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <SmoothScrollLink 
                 href="#projects" 
-                className="px-8 py-3 bg-sepia-alt text-white rounded-lg hover-bg-sepia-dark transition-colors font-medium font-mono"
+                className="px-8 py-3 bg-sepia-alt text-white rounded-lg hover-bg-sepia-dark transition-colors font-medium font-mono w-full sm:w-auto"
               >
                 View My Work
               </SmoothScrollLink>
               <SmoothScrollLink 
                 href="#contact" 
-                className="px-8 py-3 border border-sepia-alt text-dark-brown-alt rounded-lg hover-bg-typing-highlight dark:hover:bg-sepia-alt/20 transition-colors font-medium font-mono"
+                className="px-8 py-3 border border-sepia-alt text-dark-brown-alt rounded-lg hover-bg-typing-highlight dark:hover:bg-sepia-alt/20 transition-colors font-medium font-mono w-full sm:w-auto"
               >
                 Get In Touch
               </SmoothScrollLink>
