@@ -1,6 +1,6 @@
 # My Personal Site
 
-- 🔗 Live at https://zoya-portfolio-pearl.vercel.app/
+- 🔗 Live at https://zoyaba.com
 - 🚀 Built using React and TypeScript
 - ⚡️ Styled with TailwindCSS
 - 📦 View all my work: coding and artwork!
