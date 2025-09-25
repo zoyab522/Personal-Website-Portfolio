@@ -682,7 +682,7 @@ export function ProjectsSection() {
                 
                 <div className="flex flex-wrap gap-2 mb-4 archive-project-tags">
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono">
-                    React Router
+                    React
                   </span>
                   <span className="px-3 py-1 text-dark-brown-alt rounded-full text-sm font-mono">
                     TypeScript
